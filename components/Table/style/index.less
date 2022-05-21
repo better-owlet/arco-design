@@ -184,6 +184,16 @@
     margin: 0;
     border-spacing: 0;
     border-collapse: separate;
+
+    thead tr:first-child {
+      th:first-child {
+        border-radius: @table-border-radius 0 0 0;
+      }
+
+      th:last-child {
+        border-radius: 0 @table-border-radius 0 0;
+      }
+    }
   }
 
   .@{table-cls-th} {
@@ -203,14 +213,6 @@
 
     &[colspan] {
       text-align: center;
-    }
-
-    &:first-child {
-      border-radius: @table-border-radius 0 0 0;
-    }
-
-    &:last-child {
-      border-radius: 0 @table-border-radius 0 0;
     }
   }
 
@@ -280,6 +282,7 @@
 
   &-cell {
     word-break: break-all;
+    width: 100%;
 
     &-indent {
       height: 1px;
@@ -366,11 +369,11 @@
 
   // colgroup selection
   &-selection-col {
-    .fixedWidth(@table-size-selection-col-width);
+    width: @table-size-selection-col-width;
   }
 
   &-expand-icon-col {
-    .fixedWidth(@table-size-expand-icon-col-width);
+    width: @table-size-expand-icon-col-width;
   }
 
   &-radio &-th-item,
@@ -688,6 +691,15 @@
     display: flex;
     align-items: center;
     flex: 1;
+  }
+
+  // https://github.com/arco-design/arco-design/issues/695
+  &-virtualized &-selection-col {
+    max-width: @table-size-selection-col-width;
+  }
+
+  &-virtualized &-expand-icon-col {
+    max-width: @table-size-expand-icon-col-width;
   }
 
   // summary

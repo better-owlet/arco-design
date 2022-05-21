@@ -57,7 +57,7 @@ function getFormat(props) {
 }
 
 interface InnerPickerProps extends PickerProps {
-  disabledDate?: (current?: Dayjs) => boolean;
+  disabledDate?: (current: Dayjs) => boolean;
   picker?: ReactElement;
   format?: string;
   defaultValue?: CalendarValue | CalendarValue[];
@@ -173,14 +173,15 @@ const Picker = (baseProps: InnerPickerProps) => {
 
   const [panelMode, setPanelMode] = useState<ModeType>(mode);
 
-  const defaultTimeValue = isObject(showTime)
-    ? (getDayjsValue(
+  const defaultTimeValue =
+    (isObject(showTime) &&
+      (getDayjsValue(
         showTime.defaultValue,
         showTime.format || 'HH:mm:ss',
         utcOffset,
         timezone
-      ) as Dayjs)
-    : getNow(utcOffset, timezone);
+      ) as Dayjs)) ||
+    getNow(utcOffset, timezone);
   const timeValue = panelValue || defaultTimeValue;
 
   function focusInput() {

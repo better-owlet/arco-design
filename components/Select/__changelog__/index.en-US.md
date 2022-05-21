@@ -1,3 +1,36 @@
+## 2.32.2
+
+2022-04-29
+
+### 🐛 BugFix
+
+- Fixed an issue where the matched option text was not highlighted when the `Select` component searched.([#808](https://github.com/arco-design/arco-design/pull/808))
+
+## 2.32.0
+
+2022-04-15
+
+### 🐛 BugFix
+
+- Fixed the bug that `onMouseEnter` and `onMouseLeave` of `Select.Option` not works.([#729](https://github.com/arco-design/arco-design/pull/729))
+
+## 2.31.0
+
+2022-03-25
+
+### 🆕 Feature
+
+- `Select` component's `triggerElement` property allows passing in a function to customize the component trigger node.([#686](https://github.com/arco-design/arco-design/pull/686))
+
+## 2.30.1
+
+2022-03-11
+
+### 🐛 BugFix
+
+- Fix the bug that the Tag animation fails when `Select` is multiple mode.([#630](https://github.com/arco-design/arco-design/pull/630))
+- Fix the bug that the options of `Select` with `maxTagCount` are not unchecked in the correct order when press `Backspace`.([#630](https://github.com/arco-design/arco-design/pull/630))
+
 ## 2.28.2
 
 2022-01-21

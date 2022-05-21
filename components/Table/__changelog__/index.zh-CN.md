@@ -1,3 +1,63 @@
+## 2.33.1
+
+2022-05-20
+
+### 🐛 问题修复
+
+- 修复 `Table` 组件表头分组时，内部的表头单元格也有圆角的样式问题。([#872](https://github.com/arco-design/arco-design/pull/872))
+
+## 2.33.0
+
+2022-05-13
+
+### 🆕 功能升级
+
+- `Table` 组件新增 `rowSelection.checkStrictly` 支持父子选择关联。([#849](https://github.com/arco-design/arco-design/pull/849))
+
+## 2.32.2
+
+2022-04-29
+
+### 🐛 问题修复
+
+- 修复 `Table` 组件的外层 `ConfigProvider` 设置 `pagination` 后无法生效的bug。([#827](https://github.com/arco-design/arco-design/pull/827))
+
+## 2.32.1
+
+2022-04-22
+
+### 🆎 类型修正
+
+- 优化 `Table` 组件 `rowKey` 的 `TS` 定义为 `React.Key | ((record: T) => React.Key)` ([#799](https://github.com/arco-design/arco-design/pull/799))
+
+## 2.31.1
+
+2022-03-28
+
+### 💅 样式更新
+
+- 修复 `Table` 组件开启虚拟列表时复选框列宽度异常的问题。([#696](https://github.com/arco-design/arco-design/pull/696))
+
+## 2.31.0
+
+2022-03-25
+
+### 🆕 功能升级
+
+- `Table` 组件支持排序树形数据。([#678](https://github.com/arco-design/arco-design/pull/678))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 问题修复
+
+- 修复 `Table` 组件开启 `virtualized` 之后 `column.align` 不生效的 bug。([#650](https://github.com/arco-design/arco-design/pull/650))
+
+### 💅 样式更新
+
+- 修复 `Table` 组件 `expandProps.width` 设置小于 40 不生效的问题。([#656](https://github.com/arco-design/arco-design/pull/656))
+
 ## 2.30.0
 
 2022-03-04

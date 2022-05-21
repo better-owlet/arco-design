@@ -46,6 +46,7 @@ function Switch(baseProps: SwitchProps, ref) {
     if (loading) {
       return;
     }
+    props.onClick && props.onClick(event);
     if (!('checked' in props)) {
       setChecked(!mergedChecked);
     }
@@ -81,6 +82,8 @@ function Switch(baseProps: SwitchProps, ref) {
   return (
     <button
       ref={ref}
+      role="switch"
+      aria-checked={!!mergedChecked}
       {...extraProps}
       style={style}
       className={classNames}

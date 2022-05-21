@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useContext, useMemo } from 'react';
 import { BackTop, Button } from '@arco-design/web-react';
 import { IconUp, IconLeft } from '@arco-design/web-react/icon';
-import Footer from '@arco-design/arco-site-footer';
+import Footer from '@arco-materials/site-footer';
 import { useHistory } from 'react-router-dom';
 import getRoutes from './routes';
 import WidgetMenu from './widget/Menu';
@@ -62,6 +62,7 @@ function Components() {
           onClick={() => {
             setMenuCollapse(!menuCollapse);
           }}
+          aria-label="menu collapse button"
         />
         <div className="content-wrapper" style={{ marginTop: `${noticeHeight}px` }}>
           <WidgetBody lang={lang} routes={routes} />
@@ -87,6 +88,7 @@ function Components() {
             onClick={() => {
               setAnchorCollapse(!anchorCollapse);
             }}
+            aria-label="anchor collapse button"
           />
         )}
       </div>

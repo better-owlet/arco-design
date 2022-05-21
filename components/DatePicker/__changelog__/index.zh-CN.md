@@ -1,3 +1,52 @@
+## 2.32.2
+
+2022-04-29
+
+### 🐛 问题修复
+
+- 修复 `DatePicker` 组件传入不包含 `defaultValue` 的 `showTime` 对象，导致时间面板报错的 bug。([#811](https://github.com/arco-design/arco-design/pull/811))
+
+## 2.32.0
+
+2022-04-15
+
+### 🐛 问题修复
+
+- 修复 `DatePicker.RangePicker` 组件 `utcOffset` 和 `timezone` 不生效的 bug。([#765](https://github.com/arco-design/arco-design/pull/765))
+
+## 2.31.3
+
+2022-04-11
+
+### 🐛 问题修复
+
+- 修正 `DatePicker` 组件的 `disabledDate` 的 ts 定义。([#750](https://github.com/arco-design/arco-design/pull/750))
+- 修复 `DatePicker.RangePicker` 组件直接选择时间会报错的 bug。([#749](https://github.com/arco-design/arco-design/pull/749))
+
+## 2.31.0
+
+2022-03-25
+
+### 🐛 问题修复
+
+- 修复 `DatePicker` 组件 `disabledDate` 在快捷选择面板边界不正确的问题。([#687](https://github.com/arco-design/arco-design/pull/687))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 问题修复
+
+- 修复 `DatePicker` 组件  `separator` 参数不生效的问题。([#647](https://github.com/arco-design/arco-design/pull/647))
+
+## 2.30.1
+
+2022-03-11
+
+### 💎 优化
+
+- `DatePicker` 组件在选择日期的时候不再进行面板的跳动。([#627](https://github.com/arco-design/arco-design/pull/627))
+
 ## 2.30.0
 
 2022-03-04

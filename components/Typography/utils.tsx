@@ -2,7 +2,10 @@ import * as React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import mergedToString from '../_util/mergedToString';
 
-function styleToString(style: CSSStyleDeclaration, extraStyle: { [key: string]: string } = {}) {
+interface ExtraStyle {
+  [key: string]: string;
+}
+function styleToString(style: CSSStyleDeclaration, extraStyle: ExtraStyle) {
   const styleNames: string[] = Array.prototype.slice.apply(style);
   const styleString = styleNames
     .map((name) => `${name}: ${style.getPropertyValue(name)};`)
@@ -12,7 +15,6 @@ function styleToString(style: CSSStyleDeclaration, extraStyle: { [key: string]: 
     .join('');
   return styleString + extraStyleString;
 }
-
 function pxToNumber(value: string | null): number {
   if (!value) return 0;
 
@@ -34,13 +36,17 @@ export function measure(
   const ellipsisStr = ellipsisConfig.ellipsisStr !== undefined ? ellipsisConfig.ellipsisStr : '...';
   const suffix = ellipsisConfig.suffix !== undefined ? ellipsisConfig.suffix : '';
 
+  if (mirrorElement && originElement.tagName !== mirrorElement.tagName) {
+    document.body.removeChild(mirrorElement);
+    mirrorElement = undefined;
+  }
   if (!mirrorElement) {
     mirrorElement = document.createElement(originElement.tagName);
     document.body.appendChild(mirrorElement);
   }
   const originStyle = window.getComputedStyle(originElement);
-
-  const extraStyle = {
+  const originWhiteSpace = originStyle.whiteSpace || 'normal';
+  const extraStyle: ExtraStyle = {
     height: 'auto',
     'min-height': 'auto',
     'max-height': 'auto',
@@ -49,10 +55,18 @@ export function measure(
     // top:'100px',
     position: 'fixed',
     'z-index': '-200',
-    'white-space': 'normal',
     'text-overflow': 'clip',
+    // The folding threshold cannot be calculated in the nowrap scene
+    'white-space': originWhiteSpace === 'nowrap' ? 'normal' : originWhiteSpace,
     overflow: 'auto',
   };
+  // 行内元素影响折叠计算，需要手动指定宽度；
+  if (originStyle.display === 'inline') {
+    const rect = originElement.getBoundingClientRect();
+    extraStyle.width = `${rect.width}px`;
+    extraStyle.display = 'block';
+    extraStyle['box-sizing'] = 'border-box';
+  }
   const styleString = styleToString(originStyle, extraStyle);
   mirrorElement.setAttribute('style', styleString);
   mirrorElement.setAttribute('aria-hidden', 'true');

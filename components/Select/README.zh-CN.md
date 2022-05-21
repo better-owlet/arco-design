@@ -30,7 +30,7 @@
 |tokenSeparators|在多选模式下自动分词的分隔符。|`string[]`|`-`|-|
 |getPopupContainer|弹出框挂载的父节点。|`(node: HTMLElement) => Element`|`-`|-|
 |trigger|触发方式。|`TriggerProps['trigger']`|`click`|-|
-|triggerElement|自定义触发元素。|`ReactNode`|`-`|-|
+|triggerElement|自定义触发元素。|`\| ReactNode\| ((params: { value: any; option: OptionInfo \| OptionInfo[] }) => ReactNode)`|`-`|`() => ReactNode` in 2.31.0|
 |triggerProps|可以接受所有 `Trigger` 的 `Props`|`Partial<TriggerProps>`|`-`|-|
 |dropdownRender|自定义弹出内容。|`(menu: ReactNode) => ReactNode`|`-`|-|
 |dropdownMenuStyle|下拉列表的样式。|`CSSProperties`|`-`|-|
@@ -92,7 +92,7 @@
 |---|---|---|---|
 |dom|DOM 节点|`HTMLDivElement` **(必填)**|`-`|
 |focus|使选择框聚焦|`() => void` **(必填)**|`-`|
-|blur|使选择框聚焦|`() => void` **(必填)**|`-`|
+|blur|使选择框失焦|`() => void` **(必填)**|`-`|
 |hotkeyHandler|鼠标快捷操作的处理函数|`(event: KeyboardEvent) => void` **(必填)**|`-`|
 |activeOptionValue|处于悬浮态的选项的值|`OptionProps['value']` **(必填)**|`-`|
 |getOptionInfoList|获得选项信息的列表|`() => OptionInfo[]` **(必填)**|`-`|

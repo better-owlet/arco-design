@@ -13,24 +13,26 @@ export interface OperationsProps extends Omit<React.HTMLAttributes<HTMLElement>,
   /**
    * @zh 开启复制功能
    * @en Whether to be copyable
+   * @version `onCopy` params `e` in `2.31.0`
    */
   copyable?:
     | boolean
     | {
         text?: string;
-        onCopy?: (text: string) => void;
+        onCopy?: (text: string, e) => void;
         icon?: ReactNode;
         tooltips?: [ReactNode, ReactNode];
       };
   /**
    * @zh 开启可编辑功能
    * @en If editable. Can control edit state when is object
+   * @version `onStart` params `e` in `2.31.0`
    */
   editable?:
     | boolean
     | {
         editing?: boolean;
-        onStart?: (text) => void;
+        onStart?: (text, e) => void;
         onChange?: (text) => void;
         onEnd?: (text) => void;
       };
@@ -126,7 +128,7 @@ export interface EditContentProps {
   setEditing?: (editing: boolean) => void;
   editableConfig?: {
     editing?: boolean;
-    onStart?: (text) => void;
+    onStart?: (text, e) => void;
     onChange?: (text) => void;
     onEnd?: (text) => void;
   };
@@ -154,7 +156,7 @@ export type EllipsisConfig = {
    */
   rows?: number;
   /**
-   * @zh 是否支持展开/折叠
+   * @zh 显示展开/折叠按钮
    * @en Whether to support expand
    */
   expandable?: boolean;
@@ -190,4 +192,17 @@ export type EllipsisConfig = {
    * @en Show Tooltip when configure ellipsis
    */
   showTooltip?: boolean | { type?: 'tooltip' | 'popover'; props?: Record<string, any> };
+  /**
+   * @zh 是否展开
+   * @en whether to expand
+   * @version `2.33.0`
+   */
+  expanded?: boolean;
+  /**
+   * @zh 默认展开
+   * @en Default expanded state
+   * @version `2.33.0`
+   * @defaultValue false
+   */
+  defaultExpanded?: boolean;
 };

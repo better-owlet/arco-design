@@ -1,3 +1,19 @@
+## 2.33.0
+
+2022-05-13
+
+### 🆕 Feature
+
+- The `Tabs` component of type `rounded` supports different sizes.([#817](https://github.com/arco-design/arco-design/pull/817))
+
+## 2.32.2
+
+2022-04-29
+
+### 🐛 BugFix
+
+- Fixed the bug of critical calculation error in the appear/disappear of the scroll button of the `Tabs` .([#819](https://github.com/arco-design/arco-design/pull/819))
+
 ## 2.28.1
 
 2022-01-14

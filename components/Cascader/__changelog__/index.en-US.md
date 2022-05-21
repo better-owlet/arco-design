@@ -1,3 +1,35 @@
+## 2.32.0
+
+2022-04-15
+
+### 🐛 BugFix
+
+- Fixed a bug where the selected option echoed the wrong value in the search panel when `checkedstrategy=parenet` in the `Cascader` component.([#763](https://github.com/arco-design/arco-design/pull/763))
+
+## 2.31.2
+
+2022-04-01
+
+### 🐛 BugFix
+
+- Fixed a bug where the options panel was not updated when the mouse moved from a path node to a leaf node in `expandTrigger=hover` of the `Cascader` component.([#727](https://github.com/arco-design/arco-design/pull/727))
+
+## 2.31.0
+
+2022-03-25
+
+### 🆕 Feature
+
+- The `Cascader` component supports setting the echo mode of data when multiple selections are set through the `checkedStrategy` property([#692](https://github.com/arco-design/arco-design/pull/692))
+
+## 2.30.1
+
+2022-03-11
+
+### 🐛 BugFix
+
+- Fix the problem that the label text corresponding to the default value of the component is lost when the Cascader component is directly input text for remote search.([#632](https://github.com/arco-design/arco-design/pull/632))
+
 ## 2.30.0
 
 2022-03-04

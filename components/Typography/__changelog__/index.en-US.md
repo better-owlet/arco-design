@@ -1,3 +1,48 @@
+## 2.33.1
+
+2022-05-20
+
+### 🐛 BugFix
+
+- Fixed the bug that the `Expand/Collapse` button of the `Typography` component was displayed at the wrong time([#890](https://github.com/arco-design/arco-design/pull/890))
+
+## 2.33.0
+
+2022-05-13
+
+### 🆕 Feature
+
+- The `Typography` component omits the scene to support expanding controlled.([#867](https://github.com/arco-design/arco-design/pull/867))
+
+### 🐛 BugFix
+
+- Fix the bug of folding error when `Typography` component uses inline elements such as `code`.([#866](https://github.com/arco-design/arco-design/pull/866))
+
+## 2.32.2
+
+2022-04-29
+
+### 🐛 BugFix
+
+- Fix the bug that the `Tooltip` is invalid when the `Typography` component is omitted from a single line([#822](https://github.com/arco-design/arco-design/pull/822))
+
+## 2.32.0
+
+2022-04-15
+
+### 🐛 BugFix
+
+- `Typography` component multi-line omit folding supports different styles of text。([#776](https://github.com/arco-design/arco-design/pull/776))
+- Fix the bug of folding error after `Typography` sets `white-space`([#772](https://github.com/arco-design/arco-design/pull/772))
+
+## 2.31.0
+
+2022-03-25
+
+### 🆕 Feature
+
+- `Typography`'s `copyable` and `editable` expose the `event` parameter corresponding to the click callback.([#684](https://github.com/arco-design/arco-design/pull/684))
+
 ## 2.29.2
 
 2022-02-25

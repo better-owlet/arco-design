@@ -1,3 +1,52 @@
+## 2.33.1
+
+2022-05-20
+
+### 🐛 BugFix
+
+- Modifications to the return value of `getFieldValue` should not affect the original data inside the `Form`([#869](https://github.com/arco-design/arco-design/pull/869))
+
+### 🆎 TypeScript
+
+- Complete `children` property type in `FormItemProps`, compatible with React 18([#874](https://github.com/arco-design/arco-design/pull/874))
+
+## 2.33.0
+
+2022-05-13
+
+### 🆕 Feature
+
+- The `Form` component supports `Form.useWatch`.([#864](https://github.com/arco-design/arco-design/pull/864))
+- The `Form` component supports `Form.useFormContext`.([#864](https://github.com/arco-design/arco-design/pull/864))
+
+## 2.32.2
+
+2022-04-29
+
+### 🐛 BugFix
+
+- Fix the bug that the `Form` component has controlled invalidation of form items in React 18 strict mode.([#823](https://github.com/arco-design/arco-design/pull/823))
+
+## 2.32.0
+
+2022-04-15
+
+### 🆕 Feature
+
+- The `Form` component supports setting the validation message template through the `validateMessages` property([#773](https://github.com/arco-design/arco-design/pull/773))
+
+### 🐛 BugFix
+
+- Fix the bug that `onChange` is not called when the form control wrapped by `Form.Item` is returned by the function type `children`.([#760](https://github.com/arco-design/arco-design/pull/760))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 BugFix
+
+- Fix a bug where `Form.provider` causes console warning.([#646](https://github.com/arco-design/arco-design/pull/646))
+
 ## 2.30.0
 
 2022-03-04

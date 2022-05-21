@@ -1,3 +1,27 @@
+## 2.32.1
+
+2022-04-22
+
+### 💎 Enhancement
+
+- Optimize the cursor position when `focus` is called outside the `Input.Textarea` component.([#800](https://github.com/arco-design/arco-design/pull/800))
+
+## 2.31.0
+
+2022-03-25
+
+### 💅 Style
+
+- Fixed the bug that the clear button of `Input` could not be hidden in certain scenarios([#685](https://github.com/arco-design/arco-design/pull/685))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 BugFix
+
+- Fixed display of clear button when `Input` set `allowClear` and `readOnly` at same time.([#640](https://github.com/arco-design/arco-design/pull/640))
+
 ## 2.29.2
 
 2022-02-25

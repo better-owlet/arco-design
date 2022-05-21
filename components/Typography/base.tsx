@@ -19,6 +19,7 @@ import { raf, caf } from '../_util/raf';
 import omit from '../_util/omit';
 import useUpdateEffect from '../_util/hooks/useUpdate';
 import mergedToString from '../_util/mergedToString';
+import useMergeValue from '../_util/hooks/useMergeValue';
 
 type BaseProps = PropsWithChildren<
   TypographyParagraphProps & TypographyTitleProps & TypographyTextProps
@@ -61,19 +62,6 @@ function getClassNameAndComponentName(props: BaseProps, prefixCls: string) {
   };
 }
 
-function wrap(content, component, props) {
-  let currentContent = content;
-
-  component.forEach((c) => {
-    const _props =
-      isObject(props.mark) && props.mark.color
-        ? { style: { backgroundColor: props.mark.color } }
-        : {};
-    currentContent = React.createElement(c, _props, currentContent);
-  });
-  return currentContent;
-}
-
 function Base(props: BaseProps) {
   const {
     componentType,
@@ -100,11 +88,11 @@ function Base(props: BaseProps) {
 
   const [editing, setEditing] = useState<boolean>(false);
   const [isEllipsis, setEllipsis] = useState<boolean>(false);
-  const [expanding, setExpanding] = useState<boolean>(false);
   const [ellipsisText, setEllipsisText] = useState<string>('');
   const [measuring, setMeasuring] = useState(false);
 
   const componentRef = useRef(null);
+  const textWrapperRef = useRef(null);
 
   const editableConfig = isObject(editable) ? editable : {};
   const mergedEditing = 'editing' in editableConfig ? editableConfig.editing : editing;
@@ -123,8 +111,11 @@ function Base(props: BaseProps) {
     if (editable || copyable) return;
     return rows === 1;
   }
-
   const simpleEllipsis = canSimpleEllipsis();
+  const [expanding, setExpanding] = useMergeValue<boolean>(false, {
+    defaultValue: ellipsisConfig.defaultExpanded,
+    value: ellipsisConfig.expanded,
+  });
 
   function renderOperations(forceShowExpand?: boolean) {
     return (
@@ -145,6 +136,7 @@ function Base(props: BaseProps) {
 
   function onClickExpand(e) {
     setExpanding(!expanding);
+    props.onClickExpand && props.onClickExpand(e);
     ellipsisConfig.onExpand && ellipsisConfig.onExpand(!expanding, e);
   }
 
@@ -194,17 +186,14 @@ function Base(props: BaseProps) {
       return;
     }
     if (ellipsisConfig.rows) {
-      // In ellipsis mode, if the user manually expands, there is no need to calculate ellipsis and ellipsisText;
-      if (expanding) {
-        return;
-      }
       setMeasuring(true);
       const { ellipsis, text } = measure(
-        componentRef.current,
+        textWrapperRef.current || componentRef.current,
         ellipsisConfig,
         renderOperations(!!ellipsisConfig.expandable),
         children,
-        simpleEllipsis
+        // expanding 情况下只需要判断原空间是否足够，不用计算折叠临界值，
+        simpleEllipsis || expanding
       );
       setMeasuring(false);
       if (ellipsis && text) {
@@ -219,6 +208,22 @@ function Base(props: BaseProps) {
         setEllipsis(isEllipsis);
       }
     }
+  }
+
+  function wrap(content, component, props) {
+    let currentContent = content;
+    // 折叠计算前把行内元素改为块级元素。
+    const ellipsisStyle = ellipsisConfig.rows && !simpleEllipsis ? { display: 'block' } : {};
+    component.forEach((c, index) => {
+      const _props =
+        isObject(props.mark) && props.mark.color
+          ? { style: { backgroundColor: props.mark.color, ...ellipsisStyle } }
+          : { style: ellipsisStyle };
+      // The parent node of the text will affect the style of the mirror dom
+      const _ref = index === 0 ? { ref: textWrapperRef } : {};
+      currentContent = React.createElement(c, { ..._props, ..._ref }, currentContent);
+    });
+    return currentContent;
   }
 
   function renderContent() {
@@ -251,6 +256,18 @@ function Base(props: BaseProps) {
       const text = isEllipsis && !expanding ? ellipsisText : children;
       const innerText = component.length ? wrap(text, component, props) : text;
 
+      if (ellipsisConfig.rows && !simpleEllipsis && component.length) {
+        const node = (
+          <>
+            {addTooltip ? <span>{text}</span> : text}
+            {measuring || (isEllipsis && !expanding && !simpleEllipsis) ? ellipsisStr : null}
+            {suffix}
+            {renderOperations(measuring ? !!ellipsisConfig.expandable : undefined)}
+          </>
+        );
+        return wrap(node, component, props);
+      }
+
       return (
         <>
           {addTooltip ? <span>{innerText}</span> : innerText}
@@ -274,7 +291,7 @@ function Base(props: BaseProps) {
       <TextComponent
         className={cs(
           prefixCls,
-          { [`${prefixCls}-simple-ellipsis`]: simpleEllipsis },
+          { [`${prefixCls}-simple-ellipsis`]: simpleEllipsis && !expanding },
           componentClassName,
           className
         )}

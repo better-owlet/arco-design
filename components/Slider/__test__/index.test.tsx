@@ -262,4 +262,92 @@ describe('Slider ', () => {
     expect(barStyle.right).toBe('0%');
     expect(buttonStyle.right).toBe('20%');
   });
+
+  it('support intervalConfig correctly', () => {
+    const component = mountSlider(
+      <Slider
+        marks={{ '0': '0KM', '10': '10KM', '20': '20KM', '30': '30KM' }}
+        min={0}
+        max={30}
+        getIntervalConfig={([begin, end]) => {
+          const range = `${begin}~${end}`;
+          switch (range) {
+            case '0~10':
+              return { width: '50%' };
+            default: {
+              return { step: 3 };
+            }
+          }
+        }}
+      />
+    );
+    component.find('.arco-slider-dot').at(1).simulate('mousedown');
+    expect(
+      component.find('.arco-slider-button').last().getDOMNode().getAttribute('style')
+    ).toContain('left: 50%');
+
+    component.find('.arco-slider-dot').at(2).simulate('mousedown');
+    expect(
+      component.find('.arco-slider-button').last().getDOMNode().getAttribute('style')
+    ).toContain(`left: ${0.9 * 25 + 50}%`);
+  });
+
+  it('render interval width correctly when set intervalConfig', () => {
+    const component = mountSlider(
+      <Slider
+        marks={{ '0': '0KM', '10': '10KM', '20': '20KM', '30': '30KM' }}
+        min={0}
+        max={30}
+        getIntervalConfig={() => {
+          // 3 intervals, totally 90%, need to adjust
+          return { width: 0.3 };
+        }}
+      />
+    );
+    const dots = component.find('.arco-slider-dot-wrapper');
+    expect(dots.at(1).getDOMNode().getAttribute('style')).toContain(`left: 30%`);
+    expect(dots.at(2).getDOMNode().getAttribute('style')).toContain(`left: 60%`);
+    expect(dots.at(3).getDOMNode().getAttribute('style')).toContain(`left: 100%`);
+  });
+
+  it('should render correctly when showInput is Object', () => {
+    const mockChange = jest.fn();
+    const mockBlur = jest.fn();
+    const component = mountSlider(
+      <Slider
+        showInput={{ onChange: mockChange, onBlur: mockBlur, size: 'mini' }}
+        defaultValue={20}
+      />
+    );
+
+    expect(component.find('.arco-input-number-size-mini')).toBeTruthy();
+    const inputElem = component.find('.arco-input');
+    expect(inputElem.prop('value')).toEqual('20');
+    inputElem.simulate('change', { target: { value: '50' } });
+    expect(mockChange).toHaveBeenCalledTimes(1);
+    expect(+component.find('.arco-input').prop('value')).toEqual(50);
+    inputElem.simulate('blur');
+    expect(mockBlur).toHaveBeenCalledTimes(1);
+  });
+
+  it('should render correctly when showInput is Object and in range scene', () => {
+    const mockChange = jest.fn();
+    const component = mountSlider(
+      <Slider showInput={{ onChange: mockChange }} range defaultValue={[20, 30]} />
+    );
+    const beginInput = component.find('.arco-input').at(0);
+    const endInput = component.find('.arco-input').at(1);
+    beginInput.simulate('change', { target: { value: '10' } });
+    endInput.simulate('change', { target: { value: '20' } });
+    expect(+mockChange.mock.calls[0][0]).toEqual(10);
+    expect(+mockChange.mock.calls[1][0]).toEqual(20);
+  });
+
+  it('should render correctly when showInput is Empty Array or Empty Object', () => {
+    const component1 = mountSlider(<Slider showInput={[]} defaultValue={20} />);
+    const component2 = mountSlider(<Slider showInput={{}} defaultValue={20} />);
+
+    expect(+component1.find('.arco-input').prop('value')).toEqual(20);
+    expect(+component2.find('.arco-input').prop('value')).toEqual(20);
+  });
 });

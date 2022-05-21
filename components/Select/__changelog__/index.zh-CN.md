@@ -1,3 +1,36 @@
+## 2.32.2
+
+2022-04-29
+
+### 🐛 问题修复
+
+- 修复 `Select` 组件搜索时匹配到的选项文本未高亮的问题。([#808](https://github.com/arco-design/arco-design/pull/808))
+
+## 2.32.0
+
+2022-04-15
+
+### 🐛 问题修复
+
+- 修复 `Select.Option` 传入 `onMouseEnter` 和 `onMouseLeave` 未生效的 bug。([#729](https://github.com/arco-design/arco-design/pull/729))
+
+## 2.31.0
+
+2022-03-25
+
+### 🆕 功能升级
+
+- `Select` 组件 `triggerElement` 属性允许传入函数以自定义组件触发节点。([#686](https://github.com/arco-design/arco-design/pull/686))
+
+## 2.30.1
+
+2022-03-11
+
+### 🐛 问题修复
+
+- 修复 `Select` 多选时 Tag 动画失效的 bug。([#630](https://github.com/arco-design/arco-design/pull/630))
+- 修复 `Select` 设置 `maxTagCount` 时按下 `Backspace` 键时未按正确顺序删除选项的 bug。([#630](https://github.com/arco-design/arco-design/pull/630))
+
 ## 2.28.2
 
 2022-01-21

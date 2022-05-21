@@ -1,3 +1,63 @@
+## 2.33.1
+
+2022-05-20
+
+### 🐛 BugFix
+
+- Fixed the bug that the table header cells also have border-radius when the `Table` component header is grouped.([#872](https://github.com/arco-design/arco-design/pull/872))
+
+## 2.33.0
+
+2022-05-13
+
+### 🆕 Feature
+
+- `Table` Add `rowSelection.checkStrictly` to support parent-child selection associations.([#849](https://github.com/arco-design/arco-design/pull/849))
+
+## 2.32.2
+
+2022-04-29
+
+### 🐛 BugFix
+
+- Fix the bug that the outer `ConfigProvider` of the `Table` component cannot take effect after setting `pagination`([#827](https://github.com/arco-design/arco-design/pull/827))
+
+## 2.32.1
+
+2022-04-22
+
+### 🆎 TypeScript
+
+- Modify the `TS` of the `Table` component `rowKey` to be `React.Key \| ((record: T) => React.Key)`. ([#799](https://github.com/arco-design/arco-design/pull/799))
+
+## 2.31.1
+
+2022-03-28
+
+### 💅 Style
+
+- Fix the problem that the checkbox column width is abnormal when the `Table` component enable `virtualized`.([#696](https://github.com/arco-design/arco-design/pull/696))
+
+## 2.31.0
+
+2022-03-25
+
+### 🆕 Feature
+
+- The `Table` component supports sorting tree data.([#678](https://github.com/arco-design/arco-design/pull/678))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 BugFix
+
+- Fix the bug that `column.align` does not take effect when `virtualized` is enabled in `Table` component.([#650](https://github.com/arco-design/arco-design/pull/650))
+
+### 💅 Style
+
+- Fix `Table` component set `expandProps.width` is not work when less than 40.([#656](https://github.com/arco-design/arco-design/pull/656))
+
 ## 2.30.0
 
 2022-03-04

@@ -1,3 +1,52 @@
+## 2.33.1
+
+2022-05-20
+
+### 🐛 问题修复
+
+- 对 `getFieldValue` 返回值的修改不应该影响 `Form` 内部的原始数据([#869](https://github.com/arco-design/arco-design/pull/869))
+
+### 🆎 类型修正
+
+- 补全`FormItemProps`中的`children`类型，以兼容React 18([#874](https://github.com/arco-design/arco-design/pull/874))
+
+## 2.33.0
+
+2022-05-13
+
+### 🆕 功能升级
+
+- `Form` 组件支持 `Form.useWatch`。([#864](https://github.com/arco-design/arco-design/pull/864))
+- `Form` 组件支持 `Form.useFormContext`。([#864](https://github.com/arco-design/arco-design/pull/864))
+
+## 2.32.2
+
+2022-04-29
+
+### 🐛 问题修复
+
+- 修复 `Form` 组件在 React 18 严格模式下，表单项受控失效的 bug。([#823](https://github.com/arco-design/arco-design/pull/823))
+
+## 2.32.0
+
+2022-04-15
+
+### 🆕 功能升级
+
+- `Form`  组件支持通过 `validateMessages` 属性设置校验提示信息模板([#773](https://github.com/arco-design/arco-design/pull/773))
+
+### 🐛 问题修复
+
+- 修复 `Form.Item` 包裹的表单控件是由函数类型的 `children` 返回时，`onChange` 未被调用的 bug。([#760](https://github.com/arco-design/arco-design/pull/760))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 问题修复
+
+- 修复 `Form.Provider` 导致控制台 warning 的 bug。([#646](https://github.com/arco-design/arco-design/pull/646))
+
 ## 2.30.0
 
 2022-03-04

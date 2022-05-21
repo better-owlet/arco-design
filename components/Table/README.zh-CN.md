@@ -17,7 +17,7 @@
 |style|节点样式|`CSSProperties`|`-`|-|
 |className|节点类名|`string \| string[]`|`-`|-|
 |tableLayoutFixed|表格的 `table-layout` 属性设置为 `fixed`，设置为 `fixed` 后，表格的宽度不会被内容撑开超出 100%。|`boolean`|`-`|-|
-|rowKey|表格行 key 的取值字段|`string \| ((record: T) => string)`|`key`|-|
+|rowKey|表格行 key 的取值字段|`React.Key \| ((record: T) => React.Key)`|`key`|-|
 |columns|列描述数据对象的数组|`ColumnProps<T>[]`|`-`|-|
 |components|覆盖原生表格标签|`ComponentsProps`|`-`|-|
 |data|表格数据|`T[]`|`-`|-|
@@ -60,6 +60,7 @@
 |参数名|描述|类型|默认值|版本|
 |---|---|---|---|---|
 |checkAll|多选模式下是否开启全选功能|`boolean`|`-`|-|
+|checkStrictly|设置为 `false` 的时候父子选择会自动关联。|`boolean`|`true`|2.33.0|
 |checkCrossPage|多选模式下的复选框是否跨分页，只在非受控模式下生效|`boolean`|`-`|-|
 |columnTitle|自定义列表选择的标题|`string \| ReactNode`|`-`|-|
 |columnWidth|选择框列的宽度|`number`|`-`|-|
@@ -68,7 +69,6 @@
 |onChange|单选或多选的选中项发生改变时的回调|`(selectedRowKeys: (string \| number)[], selectedRows: T[]) => void`|`-`|-|
 |onSelect|用户手动选择/取消选择的回调|`(selected: boolean, record: T, selectedRows: T[]) => void`|`-`|2.22.0|
 |onSelectAll|用户手动选择/取消选择所有行的回调|`(selected: boolean, selectedRows) => void`|`-`|2.6.0|
-|pureKeys|大数据场景下优化复选框选中体验，onChange 回调里只有 keys，而不返回和计算相应的 rows|`boolean`|`-`|2.15.0|
 |preserveSelectedRowKeys|在数据项被删除时仍然保留选项的 `key`|`boolean`|`-`|2.19.0|
 |renderCell|定制复选框，用法与 `column.render` 相同。|`(originNode, checked: boolean, record: T) => ReactNode`|`-`|2.19.0|
 |selectedRowKeys|Table选中的项，（受控模式，需要跟 `onChange` 配合使用）|`(string \| number)[]`|`-`|-|

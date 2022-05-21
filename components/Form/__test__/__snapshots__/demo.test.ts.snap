@@ -193,8 +193,10 @@ exports[`renders Form/demo/basic.md correctly 1`] = `
                   class="arco-checkbox-mask"
                 >
                   <svg
+                    aria-hidden="true"
                     class="arco-checkbox-mask-icon"
                     fill="currentColor"
+                    focusable="false"
                     height="200"
                     viewBox="0 0 1024 1024"
                     width="200"
@@ -438,9 +440,12 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                   >
                     <input
+                      aria-valuemax="Infinity"
+                      aria-valuemin="-Infinity"
                       class="arco-input arco-input-size-default"
                       id="age_input"
                       placeholder="please enter"
+                      role="spinbutton"
                       value=""
                     />
                     <span
@@ -453,13 +458,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                           class="arco-input-number-step-button"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-up"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -470,13 +475,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                           class="arco-input-number-step-button"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-down"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -533,7 +538,12 @@ exports[`renders Form/demo/control.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-cascader-popup-0"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-cascader arco-cascader-single arco-cascader-show-search arco-cascader-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -548,23 +558,25 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-cascader-view-value arco-cascader-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-cascader-suffix"
                   >
                     <div
                       class="arco-cascader-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -686,7 +698,12 @@ exports[`renders Form/demo/control.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-1"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-single arco-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -702,22 +719,24 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-select-view-value arco-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -772,7 +791,12 @@ exports[`renders Form/demo/control.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-2"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -798,16 +822,18 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                             b
                           </span>
                           <span
+                            aria-label="Close"
                             class="arco-icon-hover arco-tag-icon-hover arco-tag-close-btn"
+                            role="button"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-close"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M9.857 9.858 24 24m0 0 14.142 14.142M24 24 38.142 9.858M24 24 9.857 38.142"
@@ -828,20 +854,21 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -896,7 +923,12 @@ exports[`renders Form/demo/control.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-tree-select-popup-0"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-tree-select arco-tree-select-single arco-tree-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -912,22 +944,24 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-tree-select-view-value arco-tree-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-tree-select-suffix"
                   >
                     <div
                       class="arco-tree-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -989,19 +1023,23 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                   class="arco-rate-inner"
                 >
                   <div
+                    aria-checked="false"
+                    aria-posinset="1"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1014,13 +1052,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1031,19 +1069,23 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="2"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1056,13 +1098,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1073,19 +1115,23 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="3"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1098,13 +1144,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1115,19 +1161,23 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="4"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1140,13 +1190,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1157,19 +1207,23 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="5"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1182,13 +1236,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -1263,13 +1317,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     class="arco-picker-suffix-icon"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-icon arco-icon-calendar-clock"
                       fill="none"
-                      height="1em"
+                      focusable="false"
                       stroke="currentColor"
                       stroke-width="4"
                       viewBox="0 0 48 48"
-                      width="1em"
                     >
                       <path
                         d="M7 22h34V10a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h18M34 5v8M14 5v8"
@@ -1316,8 +1370,10 @@ exports[`renders Form/demo/control.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <button
+                aria-checked="false"
                 class="arco-switch arco-switch-type-circle"
                 id="switch_input"
+                role="switch"
                 type="button"
               >
                 <div
@@ -1483,8 +1539,15 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                       style="left:0%;right:80%"
                     />
                     <div
+                      aria-disabled="false"
+                      aria-valuemax="100"
+                      aria-valuemin="0"
+                      aria-valuenow="20"
+                      aria-valuetext="20"
                       class="arco-slider-button"
+                      role="slider"
                       style="left:20%"
+                      tabindex="0"
                     />
                   </div>
                 </div>
@@ -1541,13 +1604,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                           class="arco-upload-list-preview-icon"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-eye"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               clip-rule="evenodd"
@@ -1562,13 +1625,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                           class="arco-upload-list-remove-icon"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-delete"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M5 11h5.5m0 0v29a1 1 0 0 0 1 1h25a1 1 0 0 0 1-1V11m-27 0H16m21.5 0H43m-5.5 0H32m-16 0V7h16v4m-16 0h16M20 18v15m8-15v15"
@@ -1602,13 +1665,13 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                         class="arco-upload-trigger-picture-text"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -1654,8 +1717,10 @@ exports[`renders Form/demo/control.md correctly 1`] = `
                     class="arco-checkbox-mask"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-checkbox-mask-icon"
                       fill="currentColor"
+                      focusable="false"
                       height="200"
                       viewBox="0 0 1024 1024"
                       width="200"
@@ -1832,9 +1897,12 @@ exports[`renders Form/demo/control-below.md correctly 1`] = `
                   class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                 >
                   <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
                     class="arco-input arco-input-size-default"
                     id="number_input"
                     placeholder="请输入数字"
+                    role="spinbutton"
                     value=""
                   />
                   <span
@@ -1847,13 +1915,13 @@ exports[`renders Form/demo/control-below.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-up"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -1864,13 +1932,13 @@ exports[`renders Form/demo/control-below.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-down"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -1945,7 +2013,12 @@ exports[`renders Form/demo/custom.md correctly 1`] = `
                     class="arco-input-group-addbefore"
                   >
                     <div
+                      aria-autocomplete="list"
+                      aria-controls="arco-select-popup-3"
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
                       class="arco-select arco-select-single arco-select-size-default"
+                      role="combobox"
                       style="width:100px"
                       tabindex="0"
                     >
@@ -1962,22 +2035,24 @@ exports[`renders Form/demo/custom.md correctly 1`] = `
                           value=""
                         />
                         <span
+                          aria-hidden="true"
                           class="arco-select-view-value arco-select-hidden"
                         />
                         <div
+                          aria-hidden="true"
                           class="arco-select-suffix"
                         >
                           <div
                             class="arco-select-arrow-icon"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-down"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -2212,10 +2287,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     class="arco-input-inner-wrapper arco-input-inner-wrapper-disabled arco-input-inner-wrapper-default"
                   >
                     <input
+                      aria-valuemax="Infinity"
+                      aria-valuemin="-Infinity"
                       class="arco-input arco-input-size-default arco-input-disabled"
                       disabled=""
                       id="age_input"
                       placeholder="please enter"
+                      role="spinbutton"
                       value=""
                     />
                     <span
@@ -2228,13 +2306,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                           class="arco-input-number-step-button arco-input-number-step-button-disabled"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-up"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -2245,13 +2323,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                           class="arco-input-number-step-button arco-input-number-step-button-disabled"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-down"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -2308,7 +2386,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-cascader-popup-1"
+                aria-disabled="true"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-cascader arco-cascader-single arco-cascader-show-search arco-cascader-size-default arco-cascader-disabled"
+                role="combobox"
                 tabindex="-1"
               >
                 <div
@@ -2324,23 +2408,25 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-cascader-view-value arco-cascader-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-cascader-suffix"
                   >
                     <div
                       class="arco-cascader-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -2463,7 +2549,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-5"
+                aria-disabled="true"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-single arco-select-size-default arco-select-disabled"
+                role="combobox"
                 tabindex="-1"
               >
                 <div
@@ -2480,22 +2572,24 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-select-view-value arco-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -2550,7 +2644,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-6"
+                aria-disabled="true"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default arco-select-disabled"
+                role="combobox"
                 tabindex="-1"
               >
                 <div
@@ -2590,20 +2690,21 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -2665,19 +2766,23 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                   class="arco-rate-inner"
                 >
                   <div
+                    aria-checked="false"
+                    aria-posinset="1"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2690,13 +2795,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2707,19 +2812,23 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="2"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2732,13 +2841,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2749,19 +2858,23 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="3"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2774,13 +2887,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2791,19 +2904,23 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="4"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2816,13 +2933,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2833,19 +2950,23 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-checked="false"
+                    aria-posinset="5"
+                    aria-setsize="5"
                     class="arco-rate-character"
+                    role="radio"
                   >
                     <div
                       class="arco-rate-character-left"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2858,13 +2979,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                       class="arco-rate-character-right"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-star-fill"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M22.683 5.415c.568-1.043 2.065-1.043 2.634 0l5.507 10.098a1.5 1.5 0 0 0 1.04.756l11.306 2.117c1.168.219 1.63 1.642.814 2.505l-7.902 8.359a1.5 1.5 0 0 0-.397 1.223l1.48 11.407c.153 1.177-1.058 2.057-2.131 1.548l-10.391-4.933a1.5 1.5 0 0 0-1.287 0l-10.39 4.933c-1.073.51-2.284-.37-2.131-1.548l1.48-11.407a1.5 1.5 0 0 0-.398-1.223L4.015 20.89c-.816-.863-.353-2.286.814-2.505l11.306-2.117a1.5 1.5 0 0 0 1.04-.756l5.508-10.098Z"
@@ -2940,13 +3061,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     class="arco-picker-suffix-icon"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-icon arco-icon-calendar-clock"
                       fill="none"
-                      height="1em"
+                      focusable="false"
                       stroke="currentColor"
                       stroke-width="4"
                       viewBox="0 0 48 48"
-                      width="1em"
                     >
                       <path
                         d="M7 22h34V10a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h18M34 5v8M14 5v8"
@@ -2993,9 +3114,11 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <button
+                aria-checked="false"
                 class="arco-switch arco-switch-type-circle"
                 disabled=""
                 id="switch_input"
+                role="switch"
                 type="button"
               >
                 <div
@@ -3164,8 +3287,15 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                       style="left:0%;right:80%"
                     />
                     <div
+                      aria-disabled="true"
+                      aria-valuemax="100"
+                      aria-valuemin="0"
+                      aria-valuenow="20"
+                      aria-valuetext="20"
                       class="arco-slider-button"
+                      role="slider"
                       style="left:20%"
+                      tabindex="0"
                     />
                   </div>
                 </div>
@@ -3222,13 +3352,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                           class="arco-upload-list-preview-icon"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-eye"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               clip-rule="evenodd"
@@ -3266,13 +3396,13 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                         class="arco-upload-trigger-picture-text"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -3305,6 +3435,7 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <label
+                aria-disabled="true"
                 class="arco-checkbox arco-checkbox-disabled"
                 id="readme_input"
               >
@@ -3319,8 +3450,10 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
                     class="arco-checkbox-mask"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-checkbox-mask-icon"
                       fill="currentColor"
+                      focusable="false"
                       height="200"
                       viewBox="0 0 1024 1024"
                       width="200"
@@ -3393,6 +3526,254 @@ exports[`renders Form/demo/disabled.md correctly 1`] = `
     </div>
   </form>
 </div>
+`;
+
+exports[`renders Form/demo/form-context.md correctly 1`] = `
+<form
+  class="arco-form arco-form-horizontal arco-form-size-default"
+  style="width:600px"
+>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-5 arco-form-label-item"
+    >
+      <label>
+         Disabled
+      </label>
+    </div>
+    <div
+      class="arco-col arco-col-19 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <button
+              aria-checked="false"
+              class="arco-switch arco-switch-type-circle"
+              role="switch"
+              type="button"
+            >
+              <div
+                class="arco-switch-dot"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-5 arco-form-label-item"
+    >
+      <label
+        for="name_input"
+      >
+        <strong
+          class="arco-form-item-symbol"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 1024 1024"
+            width="1em"
+          >
+            <path
+              d="M583.338667 17.066667c18.773333 0 34.133333 15.36 34.133333 34.133333v349.013333l313.344-101.888a34.133333 34.133333 0 0 1 43.008 22.016l42.154667 129.706667a34.133333 34.133333 0 0 1-21.845334 43.178667l-315.733333 102.4 208.896 287.744a34.133333 34.133333 0 0 1-7.509333 47.786666l-110.421334 80.213334a34.133333 34.133333 0 0 1-47.786666-7.509334L505.685333 706.218667 288.426667 1005.226667a34.133333 34.133333 0 0 1-47.786667 7.509333l-110.421333-80.213333a34.133333 34.133333 0 0 1-7.509334-47.786667l214.186667-295.253333L29.013333 489.813333a34.133333 34.133333 0 0 1-22.016-43.008l42.154667-129.877333a34.133333 34.133333 0 0 1 43.008-22.016l320.512 104.106667L412.672 51.2c0-18.773333 15.36-34.133333 34.133333-34.133333h136.533334z"
+            />
+          </svg>
+        </strong>
+         Username
+      </label>
+    </div>
+    <div
+      class="arco-col arco-col-19 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+          id="name"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <input
+              class="arco-input arco-input-size-default"
+              id="name_input"
+              placeholder="please enter your username"
+              value="admin"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-5 arco-form-label-item"
+    >
+      <label
+        for="age_input"
+      >
+        <strong
+          class="arco-form-item-symbol"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 1024 1024"
+            width="1em"
+          >
+            <path
+              d="M583.338667 17.066667c18.773333 0 34.133333 15.36 34.133333 34.133333v349.013333l313.344-101.888a34.133333 34.133333 0 0 1 43.008 22.016l42.154667 129.706667a34.133333 34.133333 0 0 1-21.845334 43.178667l-315.733333 102.4 208.896 287.744a34.133333 34.133333 0 0 1-7.509333 47.786666l-110.421334 80.213334a34.133333 34.133333 0 0 1-47.786666-7.509334L505.685333 706.218667 288.426667 1005.226667a34.133333 34.133333 0 0 1-47.786667 7.509333l-110.421333-80.213333a34.133333 34.133333 0 0 1-7.509334-47.786667l214.186667-295.253333L29.013333 489.813333a34.133333 34.133333 0 0 1-22.016-43.008l42.154667-129.877333a34.133333 34.133333 0 0 1 43.008-22.016l320.512 104.106667L412.672 51.2c0-18.773333 15.36-34.133333 34.133333-34.133333h136.533334z"
+            />
+          </svg>
+        </strong>
+         Age
+      </label>
+    </div>
+    <div
+      class="arco-col arco-col-19 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+          id="age"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <div
+              class="arco-input-group-wrapper arco-input-group-wrapper-default arco-input-has-suffix arco-input-number arco-input-number-mode-embed arco-input-number-size-default"
+            >
+              <span
+                class="arco-input-group"
+              >
+                <span
+                  class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
+                >
+                  <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
+                    class="arco-input arco-input-size-default"
+                    id="age_input"
+                    placeholder="please enter your age"
+                    role="spinbutton"
+                    value=""
+                  />
+                  <span
+                    class="arco-input-group-suffix"
+                  >
+                    <div
+                      class="arco-input-number-step-layer"
+                    >
+                      <div
+                        class="arco-input-number-step-button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="arco-icon arco-icon-up"
+                          fill="none"
+                          focusable="false"
+                          stroke="currentColor"
+                          stroke-width="4"
+                          viewBox="0 0 48 48"
+                        >
+                          <path
+                            d="M39.6 30.557 24.043 15 8.487 30.557"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="arco-input-number-step-button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="arco-icon arco-icon-down"
+                          fill="none"
+                          focusable="false"
+                          stroke="currentColor"
+                          stroke-width="4"
+                          viewBox="0 0 48 48"
+                        >
+                          <path
+                            d="M39.6 17.443 24.043 33 8.487 17.443"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-24 arco-col-offset-5 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <button
+              class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square"
+              style="margin-right:24px"
+              type="submit"
+            >
+              <span>
+                Submit
+              </span>
+            </button>
+            <button
+              class="arco-btn arco-btn-secondary arco-btn-size-default arco-btn-shape-square"
+              style="margin-right:24px"
+              type="button"
+            >
+              <span>
+                Reset
+              </span>
+            </button>
+            <button
+              class="arco-btn arco-btn-text arco-btn-size-default arco-btn-shape-square"
+              type="button"
+            >
+              <span>
+                Fill Form
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
 `;
 
 exports[`renders Form/demo/form-provider.md correctly 1`] = `
@@ -3476,7 +3857,12 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                   class="arco-form-item-control-children"
                 >
                   <div
+                    aria-autocomplete="list"
+                    aria-controls="arco-select-popup-7"
+                    aria-expanded="false"
+                    aria-haspopup="listbox"
                     class="arco-select arco-select-single arco-select-size-default"
+                    role="combobox"
                     tabindex="0"
                   >
                     <div
@@ -3492,22 +3878,24 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                         value=""
                       />
                       <span
+                        aria-hidden="true"
                         class="arco-select-view-value arco-select-hidden"
                       />
                       <div
+                        aria-hidden="true"
                         class="arco-select-suffix"
                       >
                         <div
                           class="arco-select-arrow-icon"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-down"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -3562,9 +3950,12 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                         class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                       >
                         <input
+                          aria-valuemax="Infinity"
+                          aria-valuemin="-Infinity"
                           class="arco-input arco-input-size-default"
                           id="searchForm-age_input"
                           placeholder="enter age"
+                          role="spinbutton"
                           value=""
                         />
                         <span
@@ -3577,13 +3968,13 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                               class="arco-input-number-step-button"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-icon arco-icon-up"
                                 fill="none"
-                                height="1em"
+                                focusable="false"
                                 stroke="currentColor"
                                 stroke-width="4"
                                 viewBox="0 0 48 48"
-                                width="1em"
                               >
                                 <path
                                   d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -3594,13 +3985,13 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                               class="arco-input-number-step-button"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-icon arco-icon-down"
                                 fill="none"
-                                height="1em"
+                                focusable="false"
                                 stroke="currentColor"
                                 stroke-width="4"
                                 viewBox="0 0 48 48"
-                                width="1em"
                               >
                                 <path
                                   d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -3713,13 +4104,13 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                         class="arco-input-group-suffix"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-search"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M33.072 33.071c6.248-6.248 6.248-16.379 0-22.627-6.249-6.249-16.38-6.249-22.628 0-6.248 6.248-6.248 16.379 0 22.627 6.248 6.248 16.38 6.248 22.628 0Zm0 0 8.485 8.485"
@@ -4203,16 +4594,17 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -4220,22 +4612,24 @@ exports[`renders Form/demo/form-provider.md correctly 1`] = `
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -4442,8 +4836,10 @@ exports[`renders Form/demo/layout.md correctly 1`] = `
                   class="arco-checkbox-mask"
                 >
                   <svg
+                    aria-hidden="true"
                     class="arco-checkbox-mask-icon"
                     fill="currentColor"
+                    focusable="false"
                     height="200"
                     viewBox="0 0 1024 1024"
                     width="200"
@@ -4599,13 +4995,13 @@ exports[`renders Form/demo/list.md correctly 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="arco-icon arco-icon-delete"
             fill="none"
-            height="1em"
+            focusable="false"
             stroke="currentColor"
             stroke-width="4"
             viewBox="0 0 48 48"
-            width="1em"
           >
             <path
               d="M5 11h5.5m0 0v29a1 1 0 0 0 1 1h25a1 1 0 0 0 1-1V11m-27 0H16m21.5 0H43m-5.5 0H32m-16 0V7h16v4m-16 0h16M20 18v15m8-15v15"
@@ -4617,13 +5013,13 @@ exports[`renders Form/demo/list.md correctly 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="arco-icon arco-icon-arrow-fall"
             fill="none"
-            height="1em"
+            focusable="false"
             stroke="currentColor"
             stroke-width="4"
             viewBox="0 0 48 48"
-            width="1em"
           >
             <path
               d="M24.008 41.99a.01.01 0 0 1-.016 0l-9.978-11.974A.01.01 0 0 1 14.02 30H33.98a.01.01 0 0 1 .007.016l-9.978 11.975Z"
@@ -4776,13 +5172,13 @@ exports[`renders Form/demo/list-nest.md correctly 1`] = `
                         type="button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-delete"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 11h5.5m0 0v29a1 1 0 0 0 1 1h25a1 1 0 0 0 1-1V11m-27 0H16m21.5 0H43m-5.5 0H32m-16 0V7h16v4m-16 0h16M20 18v15m8-15v15"
@@ -4934,9 +5330,12 @@ exports[`renders Form/demo/methods.md correctly 1`] = `
                   class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                 >
                   <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
                     class="arco-input arco-input-size-default"
                     id="age_input"
                     placeholder="please enter your age"
+                    role="spinbutton"
                     value=""
                   />
                   <span
@@ -4949,13 +5348,13 @@ exports[`renders Form/demo/methods.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-up"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -4966,13 +5365,13 @@ exports[`renders Form/demo/methods.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-down"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -5440,7 +5839,12 @@ exports[`renders Form/demo/nest-form-item.md correctly 1`] = `
                 class="arco-row arco-row-align-center arco-row-justify-start"
               >
                 <div
+                  aria-autocomplete="list"
+                  aria-controls="arco-select-popup-8"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
                   class="arco-select arco-select-single arco-select-size-default"
+                  role="combobox"
                   style="flex:1"
                   tabindex="0"
                 >
@@ -5457,22 +5861,24 @@ exports[`renders Form/demo/nest-form-item.md correctly 1`] = `
                       value=""
                     />
                     <span
+                      aria-hidden="true"
                       class="arco-select-view-value arco-select-hidden"
                     />
                     <div
+                      aria-hidden="true"
                       class="arco-select-suffix"
                     >
                       <div
                         class="arco-select-arrow-icon"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-down"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -5483,14 +5889,14 @@ exports[`renders Form/demo/nest-form-item.md correctly 1`] = `
                   </div>
                 </div>
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-exclamation-circle"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   style="margin-left:8px;color:rgb(var(--arcoblue-6))"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M24 28V14m0 16v4M6 24c0-9.941 8.059-18 18-18s18 8.059 18 18-8.059 18-18 18S6 33.941 6 24Z"
@@ -5542,7 +5948,12 @@ exports[`renders Form/demo/nest-form-item.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-9"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-single arco-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -5558,22 +5969,24 @@ exports[`renders Form/demo/nest-form-item.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-select-view-value arco-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -5766,13 +6179,13 @@ exports[`renders Form/demo/normalize.md correctly 1`] = `
                   class="arco-picker-suffix-icon"
                 >
                   <svg
+                    aria-hidden="true"
                     class="arco-icon arco-icon-calendar"
                     fill="none"
-                    height="1em"
+                    focusable="false"
                     stroke="currentColor"
                     stroke-width="4"
                     viewBox="0 0 48 48"
-                    width="1em"
                   >
                     <path
                       d="M7 22h34M14 5v8m20-8v8M8 41h32a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1Z"
@@ -6417,9 +6830,12 @@ exports[`renders Form/demo/setFields.md correctly 1`] = `
                   class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                 >
                   <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
                     class="arco-input arco-input-size-default"
                     id="age_input"
                     placeholder="please enter your age"
+                    role="spinbutton"
                     value=""
                   />
                   <span
@@ -6432,13 +6848,13 @@ exports[`renders Form/demo/setFields.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-up"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -6449,13 +6865,13 @@ exports[`renders Form/demo/setFields.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-down"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -6676,8 +7092,11 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                     class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                   >
                     <input
+                      aria-valuemax="Infinity"
+                      aria-valuemin="-Infinity"
                       class="arco-input arco-input-size-default"
                       placeholder="please enter"
+                      role="spinbutton"
                       value=""
                     />
                     <span
@@ -6690,13 +7109,13 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                           class="arco-input-number-step-button"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-up"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -6707,13 +7126,13 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                           class="arco-input-number-step-button"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-down"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -6753,7 +7172,12 @@ exports[`renders Form/demo/size.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-cascader-popup-2"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-cascader arco-cascader-single arco-cascader-show-search arco-cascader-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -6768,23 +7192,25 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-cascader-view-value arco-cascader-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-cascader-suffix"
                   >
                     <div
                       class="arco-cascader-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -6872,7 +7298,12 @@ exports[`renders Form/demo/size.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-11"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-single arco-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -6888,22 +7319,24 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-select-view-value arco-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -6941,7 +7374,12 @@ exports[`renders Form/demo/size.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-12"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -6972,20 +7410,21 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -7023,7 +7462,12 @@ exports[`renders Form/demo/size.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-tree-select-popup-1"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-tree-select arco-tree-select-single arco-tree-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -7039,22 +7483,24 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-tree-select-view-value arco-tree-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-tree-select-suffix"
                   >
                     <div
                       class="arco-tree-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -7110,13 +7556,13 @@ exports[`renders Form/demo/size.md correctly 1`] = `
                     class="arco-picker-suffix-icon"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-icon arco-icon-calendar-clock"
                       fill="none"
-                      height="1em"
+                      focusable="false"
                       stroke="currentColor"
                       stroke-width="4"
                       viewBox="0 0 48 48"
-                      width="1em"
                     >
                       <path
                         d="M7 22h34V10a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h18M34 5v8M14 5v8"
@@ -7253,6 +7699,178 @@ exports[`renders Form/demo/update.md correctly 1`] = `
 </div>
 `;
 
+exports[`renders Form/demo/useWatch.md correctly 1`] = `
+<div>
+  <form
+    class="arco-form arco-form-horizontal arco-form-size-default"
+  >
+    <div
+      class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+    >
+      <div
+        class="arco-col arco-col-5 arco-form-label-item"
+      >
+        <label
+          for="name_input"
+        >
+           Name
+        </label>
+      </div>
+      <div
+        class="arco-col arco-col-19 arco-form-item-wrapper"
+      >
+        <div
+          class="arco-form-item-control-wrapper"
+        >
+          <div
+            class="arco-form-item-control"
+            id="name"
+          >
+            <div
+              class="arco-form-item-control-children"
+            >
+              <input
+                class="arco-input arco-input-size-default"
+                id="name_input"
+                placeholder="enter name"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+    >
+      <div
+        class="arco-col arco-col-5 arco-form-label-item"
+      >
+        <label
+          for="age_input"
+        >
+           Age
+        </label>
+      </div>
+      <div
+        class="arco-col arco-col-19 arco-form-item-wrapper"
+      >
+        <div
+          class="arco-form-item-control-wrapper"
+        >
+          <div
+            class="arco-form-item-control"
+            id="age"
+          >
+            <div
+              class="arco-form-item-control-children"
+            >
+              <div
+                class="arco-input-group-wrapper arco-input-group-wrapper-default arco-input-has-suffix arco-input-number arco-input-number-mode-embed arco-input-number-size-default"
+              >
+                <span
+                  class="arco-input-group"
+                >
+                  <span
+                    class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
+                  >
+                    <input
+                      aria-valuemax="Infinity"
+                      aria-valuemin="-Infinity"
+                      class="arco-input arco-input-size-default"
+                      id="age_input"
+                      placeholder="enter age"
+                      role="spinbutton"
+                      value=""
+                    />
+                    <span
+                      class="arco-input-group-suffix"
+                    >
+                      <div
+                        class="arco-input-number-step-layer"
+                      >
+                        <div
+                          class="arco-input-number-step-button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="arco-icon arco-icon-up"
+                            fill="none"
+                            focusable="false"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            viewBox="0 0 48 48"
+                          >
+                            <path
+                              d="M39.6 30.557 24.043 15 8.487 30.557"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="arco-input-number-step-button"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="arco-icon arco-icon-down"
+                            fill="none"
+                            focusable="false"
+                            stroke="currentColor"
+                            stroke-width="4"
+                            viewBox="0 0 48 48"
+                          >
+                            <path
+                              d="M39.6 17.443 24.043 33 8.487 17.443"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+    >
+      <div
+        class="arco-col arco-col-5 arco-form-label-item"
+      >
+        <label>
+            
+        </label>
+      </div>
+      <div
+        class="arco-col arco-col-19 arco-form-item-wrapper"
+      >
+        <div
+          class="arco-form-item-control-wrapper"
+        >
+          <div
+            class="arco-form-item-control"
+          >
+            <div
+              class="arco-form-item-control-children"
+            >
+              <span
+                class="arco-typography"
+              >
+                <code>
+                  Name: ; Age: 
+                </code>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`renders Form/demo/validate.md correctly 1`] = `
 <form
   class="arco-form arco-form-horizontal arco-form-size-default"
@@ -7357,9 +7975,12 @@ exports[`renders Form/demo/validate.md correctly 1`] = `
                   class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                 >
                   <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
                     class="arco-input arco-input-size-default"
                     id="age_input"
                     placeholder="please enter your age"
+                    role="spinbutton"
                     value=""
                   />
                   <span
@@ -7372,13 +7993,13 @@ exports[`renders Form/demo/validate.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-up"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -7389,13 +8010,13 @@ exports[`renders Form/demo/validate.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-down"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -7443,6 +8064,209 @@ exports[`renders Form/demo/validate.md correctly 1`] = `
             >
               <span>
                 Validate Username
+              </span>
+            </button>
+            <button
+              class="arco-btn arco-btn-secondary arco-btn-size-default arco-btn-shape-square"
+              style="margin-right:24px"
+              type="button"
+            >
+              <span>
+                Reset
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`renders Form/demo/validate-messages.md correctly 1`] = `
+<form
+  class="arco-form arco-form-horizontal arco-form-size-default"
+  style="width:600px"
+>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-5 arco-form-label-item"
+    >
+      <label
+        for="name_input"
+      >
+        <strong
+          class="arco-form-item-symbol"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 1024 1024"
+            width="1em"
+          >
+            <path
+              d="M583.338667 17.066667c18.773333 0 34.133333 15.36 34.133333 34.133333v349.013333l313.344-101.888a34.133333 34.133333 0 0 1 43.008 22.016l42.154667 129.706667a34.133333 34.133333 0 0 1-21.845334 43.178667l-315.733333 102.4 208.896 287.744a34.133333 34.133333 0 0 1-7.509333 47.786666l-110.421334 80.213334a34.133333 34.133333 0 0 1-47.786666-7.509334L505.685333 706.218667 288.426667 1005.226667a34.133333 34.133333 0 0 1-47.786667 7.509333l-110.421333-80.213333a34.133333 34.133333 0 0 1-7.509334-47.786667l214.186667-295.253333L29.013333 489.813333a34.133333 34.133333 0 0 1-22.016-43.008l42.154667-129.877333a34.133333 34.133333 0 0 1 43.008-22.016l320.512 104.106667L412.672 51.2c0-18.773333 15.36-34.133333 34.133333-34.133333h136.533334z"
+            />
+          </svg>
+        </strong>
+         Username
+      </label>
+    </div>
+    <div
+      class="arco-col arco-col-19 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+          id="name"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <input
+              class="arco-input arco-input-size-default"
+              id="name_input"
+              placeholder="please enter your username"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-5 arco-form-label-item"
+    >
+      <label
+        for="age_input"
+      >
+        <strong
+          class="arco-form-item-symbol"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 1024 1024"
+            width="1em"
+          >
+            <path
+              d="M583.338667 17.066667c18.773333 0 34.133333 15.36 34.133333 34.133333v349.013333l313.344-101.888a34.133333 34.133333 0 0 1 43.008 22.016l42.154667 129.706667a34.133333 34.133333 0 0 1-21.845334 43.178667l-315.733333 102.4 208.896 287.744a34.133333 34.133333 0 0 1-7.509333 47.786666l-110.421334 80.213334a34.133333 34.133333 0 0 1-47.786666-7.509334L505.685333 706.218667 288.426667 1005.226667a34.133333 34.133333 0 0 1-47.786667 7.509333l-110.421333-80.213333a34.133333 34.133333 0 0 1-7.509334-47.786667l214.186667-295.253333L29.013333 489.813333a34.133333 34.133333 0 0 1-22.016-43.008l42.154667-129.877333a34.133333 34.133333 0 0 1 43.008-22.016l320.512 104.106667L412.672 51.2c0-18.773333 15.36-34.133333 34.133333-34.133333h136.533334z"
+            />
+          </svg>
+        </strong>
+         Age
+      </label>
+    </div>
+    <div
+      class="arco-col arco-col-19 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+          id="age"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <div
+              class="arco-input-group-wrapper arco-input-group-wrapper-default arco-input-has-suffix arco-input-number arco-input-number-mode-embed arco-input-number-size-default"
+            >
+              <span
+                class="arco-input-group"
+              >
+                <span
+                  class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
+                >
+                  <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
+                    class="arco-input arco-input-size-default"
+                    id="age_input"
+                    placeholder="please enter your age"
+                    role="spinbutton"
+                    value=""
+                  />
+                  <span
+                    class="arco-input-group-suffix"
+                  >
+                    <div
+                      class="arco-input-number-step-layer"
+                    >
+                      <div
+                        class="arco-input-number-step-button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="arco-icon arco-icon-up"
+                          fill="none"
+                          focusable="false"
+                          stroke="currentColor"
+                          stroke-width="4"
+                          viewBox="0 0 48 48"
+                        >
+                          <path
+                            d="M39.6 30.557 24.043 15 8.487 30.557"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="arco-input-number-step-button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="arco-icon arco-icon-down"
+                          fill="none"
+                          focusable="false"
+                          stroke="currentColor"
+                          stroke-width="4"
+                          viewBox="0 0 48 48"
+                        >
+                          <path
+                            d="M39.6 17.443 24.043 33 8.487 17.443"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="arco-row arco-row-align-start arco-row-justify-start arco-form-item arco-form-layout-horizontal"
+  >
+    <div
+      class="arco-col arco-col-24 arco-col-offset-5 arco-form-item-wrapper"
+    >
+      <div
+        class="arco-form-item-control-wrapper"
+      >
+        <div
+          class="arco-form-item-control"
+        >
+          <div
+            class="arco-form-item-control-children"
+          >
+            <button
+              class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square"
+              style="margin-right:24px"
+              type="submit"
+            >
+              <span>
+                Validate
               </span>
             </button>
             <button
@@ -7611,13 +8435,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -7673,13 +8497,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -7748,13 +8572,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -7822,13 +8646,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                     class="arco-picker-suffix-icon"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-icon arco-icon-calendar-clock"
                       fill="none"
-                      height="1em"
+                      focusable="false"
                       stroke="currentColor"
                       stroke-width="4"
                       viewBox="0 0 48 48"
-                      width="1em"
                     >
                       <path
                         d="M7 22h34V10a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h18M34 5v8M14 5v8"
@@ -7848,13 +8672,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -7908,13 +8732,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                       class="arco-picker-suffix-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-calendar"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 22h34M14 5v8m20-8v8M8 41h32a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1Z"
@@ -7948,13 +8772,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                       class="arco-picker-suffix-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-clock-circle"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M24 14v10h9.5m8.5 0c0 9.941-8.059 18-18 18S6 33.941 6 24 14.059 6 24 6s18 8.059 18 18Z"
@@ -7990,7 +8814,12 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-cascader-popup-3"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-cascader arco-cascader-single arco-cascader-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -8006,22 +8835,24 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-cascader-view-value arco-cascader-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-cascader-suffix"
                   >
                     <div
                       class="arco-cascader-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -8035,13 +8866,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -8078,7 +8909,12 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-select-popup-14"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -8109,20 +8945,21 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                     </div>
                   </div>
                   <div
+                    aria-hidden="true"
                     class="arco-select-suffix"
                   >
                     <div
                       class="arco-select-expand-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-expand"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="transform:rotate(-45deg)"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -8136,13 +8973,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -8183,8 +9020,11 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                     class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                   >
                     <input
+                      aria-valuemax="Infinity"
+                      aria-valuemin="-Infinity"
                       class="arco-input arco-input-size-default"
                       placeholder="InputNumber..."
+                      role="spinbutton"
                       value=""
                     />
                     <span
@@ -8197,13 +9037,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                           class="arco-input-number-step-button"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-up"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -8214,13 +9054,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                           class="arco-input-number-step-button"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-icon arco-icon-down"
                             fill="none"
-                            height="1em"
+                            focusable="false"
                             stroke="currentColor"
                             stroke-width="4"
                             viewBox="0 0 48 48"
-                            width="1em"
                           >
                             <path
                               d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -8236,13 +9076,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -8279,7 +9119,12 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
               class="arco-form-item-control-children"
             >
               <div
+                aria-autocomplete="list"
+                aria-controls="arco-tree-select-popup-2"
+                aria-expanded="false"
+                aria-haspopup="listbox"
                 class="arco-tree-select arco-tree-select-single arco-tree-select-size-default"
+                role="combobox"
                 tabindex="0"
               >
                 <div
@@ -8295,22 +9140,24 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                     value=""
                   />
                   <span
+                    aria-hidden="true"
                     class="arco-tree-select-view-value arco-tree-select-hidden"
                   />
                   <div
+                    aria-hidden="true"
                     class="arco-tree-select-suffix"
                   >
                     <div
                       class="arco-tree-select-arrow-icon"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-down"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -8324,13 +9171,13 @@ exports[`renders Form/demo/validate-status.md correctly 1`] = `
                 class="arco-form-item-feedback"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-close-circle-fill"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     clip-rule="evenodd"
@@ -8459,9 +9306,12 @@ exports[`renders Form/demo/validateLevel.md correctly 1`] = `
                   class="arco-input-inner-wrapper arco-input-inner-wrapper-default"
                 >
                   <input
+                    aria-valuemax="Infinity"
+                    aria-valuemin="-Infinity"
                     class="arco-input arco-input-size-default"
                     id="age_input"
                     placeholder="please enter your age"
+                    role="spinbutton"
                     value=""
                   />
                   <span
@@ -8474,13 +9324,13 @@ exports[`renders Form/demo/validateLevel.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-up"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 30.557 24.043 15 8.487 30.557"
@@ -8491,13 +9341,13 @@ exports[`renders Form/demo/validateLevel.md correctly 1`] = `
                         class="arco-input-number-step-button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-down"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M39.6 17.443 24.043 33 8.487 17.443"

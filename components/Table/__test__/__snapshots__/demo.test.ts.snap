@@ -29,7 +29,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="true"
                   class="arco-switch arco-switch-small arco-switch-type-circle arco-switch-checked"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -64,7 +66,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="false"
                   class="arco-switch arco-switch-small arco-switch-type-circle"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -99,7 +103,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="true"
                   class="arco-switch arco-switch-small arco-switch-type-circle arco-switch-checked"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -134,7 +140,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="false"
                   class="arco-switch arco-switch-small arco-switch-type-circle"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -169,7 +177,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="true"
                   class="arco-switch arco-switch-small arco-switch-type-circle arco-switch-checked"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -204,7 +214,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="true"
                   class="arco-switch arco-switch-small arco-switch-type-circle arco-switch-checked"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -239,7 +251,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="false"
                   class="arco-switch arco-switch-small arco-switch-type-circle"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -274,7 +288,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="true"
                   class="arco-switch arco-switch-small arco-switch-type-circle arco-switch-checked"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -309,7 +325,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="false"
                   class="arco-switch arco-switch-small arco-switch-type-circle"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -344,7 +362,9 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-form-item-control-children"
               >
                 <button
+                  aria-checked="false"
                   class="arco-switch arco-switch-small arco-switch-type-circle"
+                  role="switch"
                   type="button"
                 >
                   <div
@@ -593,6 +613,7 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                           class="arco-table-th-item"
                         >
                           <label
+                            aria-disabled="false"
                             class="arco-checkbox"
                           >
                             <input
@@ -605,8 +626,10 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                                 class="arco-checkbox-mask"
                               >
                                 <svg
+                                  aria-hidden="true"
                                   class="arco-checkbox-mask-icon"
                                   fill="currentColor"
+                                  focusable="false"
                                   height="200"
                                   viewBox="0 0 1024 1024"
                                   width="200"
@@ -696,8 +719,10 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -784,8 +809,10 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -872,8 +899,10 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -960,8 +989,10 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -1048,8 +1079,10 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -1131,16 +1164,17 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                 class="arco-pagination-list"
               >
                 <li
+                  aria-label="上一页"
                   class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
                 >
                   <svg
+                    aria-hidden="true"
                     class="arco-icon arco-icon-left"
                     fill="none"
-                    height="1em"
+                    focusable="false"
                     stroke="currentColor"
                     stroke-width="4"
                     viewBox="0 0 48 48"
-                    width="1em"
                   >
                     <path
                       d="M32 8.4 16.444 23.956 32 39.513"
@@ -1148,22 +1182,24 @@ exports[`renders Table/demo/attribution.md correctly 1`] = `
                   </svg>
                 </li>
                 <li
+                  aria-current="true"
+                  aria-label="第 1 页"
                   class="arco-pagination-item arco-pagination-item-active"
-                  data-active="true"
                 >
                   1
                 </li>
                 <li
+                  aria-label="下一页"
                   class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
                 >
                   <svg
+                    aria-hidden="true"
                     class="arco-icon arco-icon-right"
                     fill="none"
-                    height="1em"
+                    focusable="false"
                     stroke="currentColor"
                     stroke-width="4"
                     viewBox="0 0 48 48"
-                    width="1em"
                   >
                     <path
                       d="m16 39.513 15.556-15.557L16 8.4"
@@ -1560,16 +1596,17 @@ exports[`renders Table/demo/basic.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -1577,22 +1614,24 @@ exports[`renders Table/demo/basic.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -1608,49 +1647,169 @@ exports[`renders Table/demo/basic.md correctly 1`] = `
 `;
 
 exports[`renders Table/demo/data-children.md correctly 1`] = `
-<div
-  class="arco-table arco-table-size-default arco-table-border arco-table-hover"
->
+<div>
   <div
-    class="arco-spin"
+    class="arco-space arco-space-horizontal arco-space-align-center"
+    style="margin-bottom:16px"
   >
     <div
-      class="arco-spin-children"
+      class="arco-space-item"
+      style="margin-right:8px"
     >
-      <div
-        class="arco-table-container"
+      checkStrictly:
+    </div>
+    <div
+      class="arco-space-item"
+    >
+      <button
+        aria-checked="true"
+        class="arco-switch arco-switch-type-circle arco-switch-checked"
+        role="switch"
+        type="button"
       >
         <div
-          class="arco-table-content-scroll"
+          class="arco-switch-dot"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="arco-table arco-table-size-default arco-table-border arco-table-hover"
+  >
+    <div
+      class="arco-spin"
+    >
+      <div
+        class="arco-spin-children"
+      >
+        <div
+          class="arco-table-container"
         >
           <div
-            class="arco-table-content-inner"
+            class="arco-table-content-scroll"
           >
-            <table>
-              <colgroup>
-                <col
-                  class="arco-table-selection-col"
-                />
-                <col />
-                <col />
-                <col />
-                <col />
-              </colgroup>
-              <thead>
-                <tr
-                  class="arco-table-tr"
-                >
-                  <th
-                    class="arco-table-th arco-table-operation arco-table-checkbox"
+            <div
+              class="arco-table-content-inner"
+            >
+              <table>
+                <colgroup>
+                  <col
+                    class="arco-table-selection-col"
+                  />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr
+                    class="arco-table-tr"
                   >
-                    <div
-                      class="arco-table-th-item"
+                    <th
+                      class="arco-table-th arco-table-operation arco-table-checkbox"
+                    >
+                      <div
+                        class="arco-table-th-item"
+                      >
+                        <label
+                          aria-disabled="false"
+                          class="arco-checkbox"
+                        >
+                          <input
+                            type="checkbox"
+                          />
+                          <span
+                            class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
+                          >
+                            <div
+                              class="arco-checkbox-mask"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="arco-checkbox-mask-icon"
+                                fill="currentColor"
+                                focusable="false"
+                                height="200"
+                                viewBox="0 0 1024 1024"
+                                width="200"
+                              >
+                                <path
+                                  d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
+                                  p-id="840"
+                                />
+                              </svg>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </th>
+                    <th
+                      class="arco-table-th"
+                    >
+                      <div
+                        class="arco-table-th-item"
+                      >
+                        <span
+                          class="arco-table-th-item-title"
+                        >
+                          Name
+                        </span>
+                      </div>
+                    </th>
+                    <th
+                      class="arco-table-th"
+                    >
+                      <div
+                        class="arco-table-th-item"
+                      >
+                        <span
+                          class="arco-table-th-item-title"
+                        >
+                          Salary
+                        </span>
+                      </div>
+                    </th>
+                    <th
+                      class="arco-table-th"
+                    >
+                      <div
+                        class="arco-table-th-item"
+                      >
+                        <span
+                          class="arco-table-th-item-title"
+                        >
+                          Address
+                        </span>
+                      </div>
+                    </th>
+                    <th
+                      class="arco-table-th"
+                    >
+                      <div
+                        class="arco-table-th-item"
+                      >
+                        <span
+                          class="arco-table-th-item-title"
+                        >
+                          Email
+                        </span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="arco-table-tr"
+                  >
+                    <td
+                      class="arco-table-td arco-table-operation arco-table-checkbox"
                     >
                       <label
                         class="arco-checkbox"
                       >
                         <input
                           type="checkbox"
+                          value="1"
                         />
                         <span
                           class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
@@ -1659,8 +1818,10 @@ exports[`renders Table/demo/data-children.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -1673,428 +1834,345 @@ exports[`renders Table/demo/data-children.md correctly 1`] = `
                           </div>
                         </span>
                       </label>
-                    </div>
-                  </th>
-                  <th
-                    class="arco-table-th"
-                  >
-                    <div
-                      class="arco-table-th-item"
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-th-item-title"
+                      <div
+                        class="arco-table-cell"
                       >
-                        Name
-                      </span>
-                    </div>
-                  </th>
-                  <th
-                    class="arco-table-th"
-                  >
-                    <div
-                      class="arco-table-th-item"
-                    >
-                      <span
-                        class="arco-table-th-item-title"
-                      >
-                        Salary
-                      </span>
-                    </div>
-                  </th>
-                  <th
-                    class="arco-table-th"
-                  >
-                    <div
-                      class="arco-table-th-item"
-                    >
-                      <span
-                        class="arco-table-th-item-title"
-                      >
-                        Address
-                      </span>
-                    </div>
-                  </th>
-                  <th
-                    class="arco-table-th"
-                  >
-                    <div
-                      class="arco-table-th-item"
-                    >
-                      <span
-                        class="arco-table-th-item-title"
-                      >
-                        Email
-                      </span>
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  class="arco-table-tr"
-                >
-                  <td
-                    class="arco-table-td arco-table-operation arco-table-checkbox"
-                  >
-                    <label
-                      class="arco-checkbox"
-                    >
-                      <input
-                        type="checkbox"
-                        value="1"
-                      />
-                      <span
-                        class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
-                      >
-                        <div
-                          class="arco-checkbox-mask"
+                        <span
+                          class="arco-table-cell-expand-icon"
                         >
-                          <svg
-                            class="arco-checkbox-mask-icon"
-                            fill="currentColor"
-                            height="200"
-                            viewBox="0 0 1024 1024"
-                            width="200"
+                          <button
+                            type="button"
                           >
-                            <path
-                              d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
-                              p-id="840"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                    </label>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
-                    >
-                      <span
-                        class="arco-table-cell-expand-icon"
-                      >
-                        <button
-                          type="button"
+                            <svg
+                              aria-hidden="true"
+                              class="arco-icon arco-icon-plus"
+                              fill="none"
+                              focusable="false"
+                              stroke="currentColor"
+                              stroke-width="4"
+                              viewBox="0 0 48 48"
+                            >
+                              <path
+                                d="M5 24h38M24 5v38"
+                              />
+                            </svg>
+                          </button>
+                        </span>
+                        <span
+                          class="arco-table-cell-wrap-value"
                         >
-                          <svg
-                            class="arco-icon arco-icon-plus"
-                            fill="none"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="4"
-                            viewBox="0 0 48 48"
-                            width="1em"
-                          >
-                            <path
-                              d="M5 24h38M24 5v38"
-                            />
-                          </svg>
-                        </button>
-                      </span>
-                      <span
-                        class="arco-table-cell-wrap-value"
-                      >
-                        Jane Doe
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                          Jane Doe
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-wrap-value"
+                      <div
+                        class="arco-table-cell"
                       >
-                        23000
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
-                    >
-                      <span
-                        class="arco-table-cell-wrap-value"
-                      >
-                        32 Park Road, London
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
-                    >
-                      <span
-                        class="arco-table-cell-wrap-value"
-                      >
-                        jane.doe@example.com
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  class="arco-table-tr"
-                >
-                  <td
-                    class="arco-table-td arco-table-operation arco-table-checkbox"
-                  >
-                    <label
-                      class="arco-checkbox"
-                    >
-                      <input
-                        type="checkbox"
-                        value="3"
-                      />
-                      <span
-                        class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
-                      >
-                        <div
-                          class="arco-checkbox-mask"
+                        <span
+                          class="arco-table-cell-wrap-value"
                         >
-                          <svg
-                            class="arco-checkbox-mask-icon"
-                            fill="currentColor"
-                            height="200"
-                            viewBox="0 0 1024 1024"
-                            width="200"
-                          >
-                            <path
-                              d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
-                              p-id="840"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                    </label>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                          23000
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-expand-icon"
+                      <div
+                        class="arco-table-cell"
                       >
-                        <button
-                          type="button"
+                        <span
+                          class="arco-table-cell-wrap-value"
                         >
-                          <svg
-                            class="arco-icon arco-icon-plus"
-                            fill="none"
-                            height="1em"
-                            stroke="currentColor"
-                            stroke-width="4"
-                            viewBox="0 0 48 48"
-                            width="1em"
-                          >
-                            <path
-                              d="M5 24h38M24 5v38"
-                            />
-                          </svg>
-                        </button>
-                      </span>
-                      <span
-                        class="arco-table-cell-wrap-value"
-                      >
-                        Alisa Ross
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                          32 Park Road, London
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-wrap-value"
+                      <div
+                        class="arco-table-cell"
                       >
-                        25000
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
-                    >
-                      <span
-                        class="arco-table-cell-wrap-value"
-                      >
-                        35 Park Road, London
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
-                    >
-                      <span
-                        class="arco-table-cell-wrap-value"
-                      >
-                        alisa.ross@example.com
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  class="arco-table-tr"
-                >
-                  <td
-                    class="arco-table-td arco-table-operation arco-table-checkbox"
-                  >
-                    <label
-                      class="arco-checkbox"
-                    >
-                      <input
-                        type="checkbox"
-                        value="7"
-                      />
-                      <span
-                        class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
-                      >
-                        <div
-                          class="arco-checkbox-mask"
+                        <span
+                          class="arco-table-cell-wrap-value"
                         >
-                          <svg
-                            class="arco-checkbox-mask-icon"
-                            fill="currentColor"
-                            height="200"
-                            viewBox="0 0 1024 1024"
-                            width="200"
+                          jane.doe@example.com
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="arco-table-tr"
+                  >
+                    <td
+                      class="arco-table-td arco-table-operation arco-table-checkbox"
+                    >
+                      <label
+                        class="arco-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                          value="2"
+                        />
+                        <span
+                          class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
+                        >
+                          <div
+                            class="arco-checkbox-mask"
                           >
-                            <path
-                              d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
-                              p-id="840"
-                            />
-                          </svg>
-                        </div>
-                      </span>
-                    </label>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                            <svg
+                              aria-hidden="true"
+                              class="arco-checkbox-mask-icon"
+                              fill="currentColor"
+                              focusable="false"
+                              height="200"
+                              viewBox="0 0 1024 1024"
+                              width="200"
+                            >
+                              <path
+                                d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
+                                p-id="840"
+                              />
+                            </svg>
+                          </div>
+                        </span>
+                      </label>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-indent"
-                        style="padding-left:20px"
-                      />
-                      <span
-                        class="arco-table-cell-wrap-value"
+                      <div
+                        class="arco-table-cell"
                       >
-                        Kevin Sandra
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                        <span
+                          class="arco-table-cell-expand-icon"
+                        >
+                          <button
+                            type="button"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="arco-icon arco-icon-plus"
+                              fill="none"
+                              focusable="false"
+                              stroke="currentColor"
+                              stroke-width="4"
+                              viewBox="0 0 48 48"
+                            >
+                              <path
+                                d="M5 24h38M24 5v38"
+                              />
+                            </svg>
+                          </button>
+                        </span>
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          Alisa Ross
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-wrap-value"
+                      <div
+                        class="arco-table-cell"
                       >
-                        22000
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          25000
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-wrap-value"
+                      <div
+                        class="arco-table-cell"
                       >
-                        31 Park Road, London
-                      </span>
-                    </div>
-                  </td>
-                  <td
-                    class="arco-table-td"
-                  >
-                    <div
-                      class="arco-table-cell"
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          35 Park Road, London
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
                     >
-                      <span
-                        class="arco-table-cell-wrap-value"
+                      <div
+                        class="arco-table-cell"
                       >
-                        kevin.sandra@example.com
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          alisa.ross@example.com
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="arco-table-tr"
+                  >
+                    <td
+                      class="arco-table-td arco-table-operation arco-table-checkbox"
+                    >
+                      <label
+                        class="arco-checkbox"
+                      >
+                        <input
+                          type="checkbox"
+                          value="7"
+                        />
+                        <span
+                          class="arco-icon-hover arco-checkbox-icon-hover arco-checkbox-mask-wrapper"
+                        >
+                          <div
+                            class="arco-checkbox-mask"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="arco-checkbox-mask-icon"
+                              fill="currentColor"
+                              focusable="false"
+                              height="200"
+                              viewBox="0 0 1024 1024"
+                              width="200"
+                            >
+                              <path
+                                d="M877.44815445 206.10060629a64.72691371 64.72691371 0 0 0-95.14856334 4.01306852L380.73381888 685.46812814 235.22771741 533.48933518a64.72691371 64.72691371 0 0 0-92.43003222-1.03563036l-45.82665557 45.82665443a64.72691371 64.72691371 0 0 0-0.90617629 90.61767965l239.61903446 250.10479331a64.72691371 64.72691371 0 0 0 71.19960405 15.14609778 64.33855261 64.33855261 0 0 0 35.08198741-21.23042702l36.24707186-42.71976334 40.5190474-40.77795556-3.36579926-3.49525333 411.40426297-486.74638962a64.72691371 64.72691371 0 0 0-3.88361443-87.64024149l-45.3088404-45.43829334z"
+                                p-id="840"
+                              />
+                            </svg>
+                          </div>
+                        </span>
+                      </label>
+                    </td>
+                    <td
+                      class="arco-table-td"
+                    >
+                      <div
+                        class="arco-table-cell"
+                      >
+                        <span
+                          class="arco-table-cell-indent"
+                          style="padding-left:20px"
+                        />
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          Kevin Sandra
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
+                    >
+                      <div
+                        class="arco-table-cell"
+                      >
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          22000
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
+                    >
+                      <div
+                        class="arco-table-cell"
+                      >
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          31 Park Road, London
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="arco-table-td"
+                    >
+                      <div
+                        class="arco-table-cell"
+                      >
+                        <span
+                          class="arco-table-cell-wrap-value"
+                        >
+                          kevin.sandra@example.com
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="arco-table-pagination"
-      >
         <div
-          class="arco-pagination arco-pagination-size-default"
+          class="arco-table-pagination"
         >
-          <ul
-            class="arco-pagination-list"
+          <div
+            class="arco-pagination arco-pagination-size-default"
           >
-            <li
-              class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
+            <ul
+              class="arco-pagination-list"
             >
-              <svg
-                class="arco-icon arco-icon-left"
-                fill="none"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="4"
-                viewBox="0 0 48 48"
-                width="1em"
+              <li
+                aria-label="上一页"
+                class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
-                <path
-                  d="M32 8.4 16.444 23.956 32 39.513"
-                />
-              </svg>
-            </li>
-            <li
-              class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
-            >
-              1
-            </li>
-            <li
-              class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
-            >
-              <svg
-                class="arco-icon arco-icon-right"
-                fill="none"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="4"
-                viewBox="0 0 48 48"
-                width="1em"
+                <svg
+                  aria-hidden="true"
+                  class="arco-icon arco-icon-left"
+                  fill="none"
+                  focusable="false"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M32 8.4 16.444 23.956 32 39.513"
+                  />
+                </svg>
+              </li>
+              <li
+                aria-current="true"
+                aria-label="第 1 页"
+                class="arco-pagination-item arco-pagination-item-active"
               >
-                <path
-                  d="m16 39.513 15.556-15.557L16 8.4"
-                />
-              </svg>
-            </li>
-          </ul>
+                1
+              </li>
+              <li
+                aria-label="下一页"
+                class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="arco-icon arco-icon-right"
+                  fill="none"
+                  focusable="false"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="m16 39.513 15.556-15.557L16 8.4"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -2487,16 +2565,17 @@ exports[`renders Table/demo/drag.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -2504,22 +2583,24 @@ exports[`renders Table/demo/drag.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -2581,6 +2662,7 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                       class="arco-table-th-item"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox"
                       >
                         <input
@@ -2593,8 +2675,10 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -2675,14 +2759,14 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                       class="arco-table-cell"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-drag-dot-vertical"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="cursor:move;color:#555"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M17 8h2v2h-2V8ZM17 23h2v2h-2v-2ZM17 38h2v2h-2v-2ZM29 8h2v2h-2V8ZM29 23h2v2h-2v-2ZM29 38h2v2h-2v-2Z"
@@ -2712,8 +2796,10 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -2791,14 +2877,14 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                       class="arco-table-cell"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-drag-dot-vertical"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="cursor:move;color:#555"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M17 8h2v2h-2V8ZM17 23h2v2h-2v-2ZM17 38h2v2h-2v-2ZM29 8h2v2h-2V8ZM29 23h2v2h-2v-2ZM29 38h2v2h-2v-2Z"
@@ -2828,8 +2914,10 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -2907,14 +2995,14 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                       class="arco-table-cell"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-drag-dot-vertical"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="cursor:move;color:#555"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M17 8h2v2h-2V8ZM17 23h2v2h-2v-2ZM17 38h2v2h-2v-2ZM29 8h2v2h-2V8ZM29 23h2v2h-2v-2ZM29 38h2v2h-2v-2Z"
@@ -2944,8 +3032,10 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -3023,14 +3113,14 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                       class="arco-table-cell"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-drag-dot-vertical"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="cursor:move;color:#555"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M17 8h2v2h-2V8ZM17 23h2v2h-2v-2ZM17 38h2v2h-2v-2ZM29 8h2v2h-2V8ZM29 23h2v2h-2v-2ZM29 38h2v2h-2v-2Z"
@@ -3060,8 +3150,10 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -3139,14 +3231,14 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                       class="arco-table-cell"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-drag-dot-vertical"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         style="cursor:move;color:#555"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M17 8h2v2h-2V8ZM17 23h2v2h-2v-2ZM17 38h2v2h-2v-2ZM29 8h2v2h-2V8ZM29 23h2v2h-2v-2ZM29 38h2v2h-2v-2Z"
@@ -3176,8 +3268,10 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -3259,16 +3353,17 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -3276,22 +3371,24 @@ exports[`renders Table/demo/drag-handle.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -3407,13 +3504,13 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -3484,13 +3581,13 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -3561,13 +3658,13 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -3638,13 +3735,13 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -3715,13 +3812,13 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -3797,16 +3894,17 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -3814,22 +3912,24 @@ exports[`renders Table/demo/expand-sub-table.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -3945,13 +4045,13 @@ exports[`renders Table/demo/expandable.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -4022,13 +4122,13 @@ exports[`renders Table/demo/expandable.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -4099,13 +4199,13 @@ exports[`renders Table/demo/expandable.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -4235,13 +4335,13 @@ exports[`renders Table/demo/expandable.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -4317,16 +4417,17 @@ exports[`renders Table/demo/expandable.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -4334,22 +4435,24 @@ exports[`renders Table/demo/expandable.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -4472,13 +4575,13 @@ exports[`renders Table/demo/expandprops.md correctly 1`] = `
                   >
                     <button>
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-right"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="m16 39.513 15.556-15.557L16 8.4"
@@ -4548,13 +4651,13 @@ exports[`renders Table/demo/expandprops.md correctly 1`] = `
                   >
                     <button>
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-right"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="m16 39.513 15.556-15.557L16 8.4"
@@ -4624,13 +4727,13 @@ exports[`renders Table/demo/expandprops.md correctly 1`] = `
                   >
                     <button>
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-right"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="m16 39.513 15.556-15.557L16 8.4"
@@ -4760,13 +4863,13 @@ exports[`renders Table/demo/expandprops.md correctly 1`] = `
                   >
                     <button>
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-right"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="m16 39.513 15.556-15.557L16 8.4"
@@ -4842,16 +4945,17 @@ exports[`renders Table/demo/expandprops.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -4859,22 +4963,24 @@ exports[`renders Table/demo/expandprops.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -4934,13 +5040,13 @@ exports[`renders Table/demo/filter-dropdown.md correctly 1`] = `
                         class="arco-table-filters"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-search"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M33.072 33.071c6.248-6.248 6.248-16.379 0-22.627-6.249-6.249-16.38-6.249-22.628 0-6.248 6.248-6.248 16.379 0 22.627 6.248 6.248 16.38 6.248 22.628 0Zm0 0 8.485 8.485"
@@ -5286,16 +5392,17 @@ exports[`renders Table/demo/filter-dropdown.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -5303,22 +5410,24 @@ exports[`renders Table/demo/filter-dropdown.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -5393,6 +5502,7 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                         class="arco-table-th-item"
                       >
                         <label
+                          aria-disabled="false"
                           class="arco-checkbox"
                         >
                           <input
@@ -5405,8 +5515,10 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -5556,13 +5668,13 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                         type="button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -5588,8 +5700,10 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -5708,13 +5822,13 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                         type="button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -5740,8 +5854,10 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -5860,13 +5976,13 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                         type="button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -5892,8 +6008,10 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -6012,13 +6130,13 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                         type="button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -6044,8 +6162,10 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -6164,13 +6284,13 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                         type="button"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-plus"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M5 24h38M24 5v38"
@@ -6196,8 +6316,10 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -6321,16 +6443,17 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -6338,22 +6461,24 @@ exports[`renders Table/demo/fixed-column.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -7137,16 +7262,17 @@ exports[`renders Table/demo/group-columns.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -7154,22 +7280,24 @@ exports[`renders Table/demo/group-columns.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -7584,16 +7712,17 @@ exports[`renders Table/demo/header-sticky.md correctly 1`] = `
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -7601,22 +7730,24 @@ exports[`renders Table/demo/header-sticky.md correctly 1`] = `
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -7693,6 +7824,7 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                       class="arco-table-th-item"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox arco-checkbox-indeterminate"
                       >
                         <input
@@ -7705,8 +7837,10 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -7795,6 +7929,7 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                     style="left:40px"
                   >
                     <label
+                      aria-disabled="false"
                       class="arco-checkbox"
                     >
                       <input
@@ -7808,8 +7943,10 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -7831,13 +7968,13 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -7913,6 +8050,7 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                     style="left:40px"
                   >
                     <label
+                      aria-disabled="false"
                       class="arco-checkbox"
                     >
                       <input
@@ -7926,8 +8064,10 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -7949,13 +8089,13 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -8031,6 +8171,7 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                     style="left:40px"
                   >
                     <label
+                      aria-disabled="false"
                       class="arco-checkbox"
                     >
                       <input
@@ -8044,8 +8185,10 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8067,13 +8210,13 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -8149,6 +8292,7 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                     style="left:40px"
                   >
                     <label
+                      aria-disabled="false"
                       checked=""
                       class="arco-checkbox arco-checkbox-checked"
                     >
@@ -8164,8 +8308,10 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8251,6 +8397,7 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                     style="left:40px"
                   >
                     <label
+                      aria-disabled="false"
                       class="arco-checkbox"
                     >
                       <input
@@ -8264,8 +8411,10 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8287,13 +8436,13 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
                       type="button"
                     >
                       <svg
+                        aria-hidden="true"
                         class="arco-icon arco-icon-plus"
                         fill="none"
-                        height="1em"
+                        focusable="false"
                         stroke="currentColor"
                         stroke-width="4"
                         viewBox="0 0 48 48"
-                        width="1em"
                       >
                         <path
                           d="M5 24h38M24 5v38"
@@ -8370,16 +8519,17 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -8387,22 +8537,24 @@ exports[`renders Table/demo/operations.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -8457,6 +8609,7 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                       class="arco-table-th-item"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox"
                       >
                         <input
@@ -8469,8 +8622,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -8560,8 +8715,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8648,8 +8805,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8736,8 +8895,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8824,8 +8985,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -8912,8 +9075,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -9000,8 +9165,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -9088,8 +9255,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -9176,8 +9345,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -9264,8 +9435,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -9352,8 +9525,10 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                           class="arco-checkbox-mask"
                         >
                           <svg
+                            aria-hidden="true"
                             class="arco-checkbox-mask-icon"
                             fill="currentColor"
+                            focusable="false"
                             height="200"
                             viewBox="0 0 1024 1024"
                             width="200"
@@ -9477,16 +9652,17 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -9494,46 +9670,48 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="第 2 页"
               class="arco-pagination-item"
-              data-active="false"
             >
               2
             </li>
             <li
+              aria-label="第 3 页"
               class="arco-pagination-item"
-              data-active="false"
             >
               3
             </li>
             <li
+              aria-label="第 4 页"
               class="arco-pagination-item"
-              data-active="false"
             >
               4
             </li>
             <li
+              aria-label="第 5 页"
               class="arco-pagination-item"
-              data-active="false"
             >
               5
             </li>
             <li
+              aria-label="向后 5 页"
               class="arco-pagination-item arco-pagination-item-jumper"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-more"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M38 25v-2h2v2h-2ZM23 25v-2h2v2h-2ZM8 25v-2h2v2H8Z"
@@ -9546,22 +9724,23 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-label="第 10 页"
               class="arco-pagination-item"
-              data-active="false"
             >
               10
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -9570,10 +9749,16 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
             </li>
           </ul>
           <div
+            aria-label="页码"
             class="arco-pagination-option"
           >
             <div
+              aria-autocomplete="list"
+              aria-controls="arco-select-popup-0"
+              aria-expanded="false"
+              aria-haspopup="listbox"
               class="arco-select arco-select-single arco-select-size-default"
+              role="combobox"
               tabindex="0"
             >
               <div
@@ -9581,6 +9766,7 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                 title="10 条/页"
               >
                 <input
+                  aria-hidden="true"
                   autocomplete="off"
                   class="arco-select-view-input arco-select-hidden"
                   style="width:100%;pointer-events:none"
@@ -9593,19 +9779,20 @@ exports[`renders Table/demo/pagination.md correctly 1`] = `
                   10 条/页
                 </span>
                 <div
+                  aria-hidden="true"
                   class="arco-select-suffix"
                 >
                   <div
                     class="arco-select-arrow-icon"
                   >
                     <svg
+                      aria-hidden="true"
                       class="arco-icon arco-icon-down"
                       fill="none"
-                      height="1em"
+                      focusable="false"
                       stroke="currentColor"
                       stroke-width="4"
                       viewBox="0 0 48 48"
-                      width="1em"
                     >
                       <path
                         d="M39.6 17.443 24.043 33 8.487 17.443"
@@ -10038,16 +10225,17 @@ exports[`renders Table/demo/render.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -10055,22 +10243,24 @@ exports[`renders Table/demo/render.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -10480,16 +10670,17 @@ exports[`renders Table/demo/resizable.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -10497,22 +10688,24 @@ exports[`renders Table/demo/resizable.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -10858,16 +11051,17 @@ exports[`renders Table/demo/rowspan.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -10875,22 +11069,24 @@ exports[`renders Table/demo/rowspan.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -10978,6 +11174,7 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                         class="arco-table-th-item"
                       >
                         <label
+                          aria-disabled="false"
                           class="arco-checkbox"
                         >
                           <input
@@ -10990,8 +11187,10 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -11068,6 +11267,7 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                       class="arco-table-td arco-table-operation arco-table-checkbox"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox"
                       >
                         <input
@@ -11081,8 +11281,10 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -11156,6 +11358,7 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                       class="arco-table-td arco-table-operation arco-table-checkbox"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox"
                       >
                         <input
@@ -11169,8 +11372,10 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -11244,6 +11449,7 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                       class="arco-table-td arco-table-operation arco-table-checkbox"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox"
                       >
                         <input
@@ -11257,8 +11463,10 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -11332,6 +11540,7 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                       class="arco-table-td arco-table-operation arco-table-checkbox"
                     >
                       <label
+                        aria-disabled="true"
                         checked=""
                         class="arco-checkbox arco-checkbox-disabled arco-checkbox-checked"
                       >
@@ -11348,8 +11557,10 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -11423,6 +11634,7 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                       class="arco-table-td arco-table-operation arco-table-checkbox"
                     >
                       <label
+                        aria-disabled="false"
                         class="arco-checkbox"
                       >
                         <input
@@ -11436,8 +11648,10 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                             class="arco-checkbox-mask"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-checkbox-mask-icon"
                               fill="currentColor"
+                              focusable="false"
                               height="200"
                               viewBox="0 0 1024 1024"
                               width="200"
@@ -11519,16 +11733,17 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -11536,22 +11751,24 @@ exports[`renders Table/demo/selection.md correctly 1`] = `
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -11618,13 +11835,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                             class="arco-table-sorter-icon"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-caret-up"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M23.063 13.171a1.2 1.2 0 0 1 1.875 0l13.503 16.88c.628.785.069 1.949-.937 1.949H10.497c-1.006 0-1.565-1.164-.937-1.95l13.503-16.879Z"
@@ -11637,13 +11854,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                             class="arco-table-sorter-icon"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-caret-down"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M24.938 34.829a1.2 1.2 0 0 1-1.875 0L9.56 17.949c-.628-.785-.069-1.949.937-1.949h27.007c1.006 0 1.565 1.164.937 1.95L24.937 34.829Z"
@@ -11677,13 +11894,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                             class="arco-table-sorter-icon arco-table-sorter-icon-active"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-caret-up"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M23.063 13.171a1.2 1.2 0 0 1 1.875 0l13.503 16.88c.628.785.069 1.949-.937 1.949H10.497c-1.006 0-1.565-1.164-.937-1.95l13.503-16.879Z"
@@ -11698,13 +11915,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                         class="arco-table-filters arco-table-filters-active"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-filter"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M30 42V22.549a1 1 0 0 1 .463-.844l10.074-6.41A1 1 0 0 0 41 14.45V8a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6.451a1 1 0 0 0 .463.844l10.074 6.41a1 1 0 0 1 .463.844V37"
@@ -11728,13 +11945,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                         class="arco-table-filters"
                       >
                         <svg
+                          aria-hidden="true"
                           class="arco-icon arco-icon-filter"
                           fill="none"
-                          height="1em"
+                          focusable="false"
                           stroke="currentColor"
                           stroke-width="4"
                           viewBox="0 0 48 48"
-                          width="1em"
                         >
                           <path
                             d="M30 42V22.549a1 1 0 0 1 .463-.844l10.074-6.41A1 1 0 0 0 41 14.45V8a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6.451a1 1 0 0 0 .463.844l10.074 6.41a1 1 0 0 1 .463.844V37"
@@ -11764,13 +11981,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                             class="arco-table-sorter-icon"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-caret-up"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M23.063 13.171a1.2 1.2 0 0 1 1.875 0l13.503 16.88c.628.785.069 1.949-.937 1.949H10.497c-1.006 0-1.565-1.164-.937-1.95l13.503-16.879Z"
@@ -11783,13 +12000,13 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
                             class="arco-table-sorter-icon"
                           >
                             <svg
+                              aria-hidden="true"
                               class="arco-icon arco-icon-caret-down"
                               fill="none"
-                              height="1em"
+                              focusable="false"
                               stroke="currentColor"
                               stroke-width="4"
                               viewBox="0 0 48 48"
-                              width="1em"
                             >
                               <path
                                 d="M24.938 34.829a1.2 1.2 0 0 1-1.875 0L9.56 17.949c-.628-.785-.069-1.949.937-1.949h27.007c1.006 0 1.565 1.164.937 1.95L24.937 34.829Z"
@@ -12044,16 +12261,17 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -12061,22 +12279,24 @@ exports[`renders Table/demo/sorter.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -12475,16 +12695,17 @@ exports[`renders Table/demo/style.md correctly 1`] = `
             class="arco-pagination-list"
           >
             <li
+              aria-label="上一页"
               class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-left"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="M32 8.4 16.444 23.956 32 39.513"
@@ -12492,22 +12713,24 @@ exports[`renders Table/demo/style.md correctly 1`] = `
               </svg>
             </li>
             <li
+              aria-current="true"
+              aria-label="第 1 页"
               class="arco-pagination-item arco-pagination-item-active"
-              data-active="true"
             >
               1
             </li>
             <li
+              aria-label="下一页"
               class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
             >
               <svg
+                aria-hidden="true"
                 class="arco-icon arco-icon-right"
                 fill="none"
-                height="1em"
+                focusable="false"
                 stroke="currentColor"
                 stroke-width="4"
                 viewBox="0 0 48 48"
-                width="1em"
               >
                 <path
                   d="m16 39.513 15.556-15.557L16 8.4"
@@ -12945,16 +13168,17 @@ exports[`renders Table/demo/summary.md correctly 1`] = `
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -12962,22 +13186,24 @@ exports[`renders Table/demo/summary.md correctly 1`] = `
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -13559,16 +13785,17 @@ exports[`renders Table/demo/summary.md correctly 1`] = `
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -13576,22 +13803,24 @@ exports[`renders Table/demo/summary.md correctly 1`] = `
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -14065,16 +14294,17 @@ exports[`renders Table/demo/summary.md correctly 1`] = `
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -14082,22 +14312,24 @@ exports[`renders Table/demo/summary.md correctly 1`] = `
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -14627,16 +14859,17 @@ Array [
               class="arco-pagination-list"
             >
               <li
+                aria-label="上一页"
                 class="arco-pagination-item arco-pagination-item-prev arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-left"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="M32 8.4 16.444 23.956 32 39.513"
@@ -14644,22 +14877,24 @@ Array [
                 </svg>
               </li>
               <li
+                aria-current="true"
+                aria-label="第 1 页"
                 class="arco-pagination-item arco-pagination-item-active"
-                data-active="true"
               >
                 1
               </li>
               <li
+                aria-label="下一页"
                 class="arco-pagination-item arco-pagination-item-next arco-pagination-item-disabled"
               >
                 <svg
+                  aria-hidden="true"
                   class="arco-icon arco-icon-right"
                   fill="none"
-                  height="1em"
+                  focusable="false"
                   stroke="currentColor"
                   stroke-width="4"
                   viewBox="0 0 48 48"
-                  width="1em"
                 >
                   <path
                     d="m16 39.513 15.556-15.557L16 8.4"
@@ -14722,6 +14957,7 @@ exports[`renders Table/demo/virtualized.md correctly 1`] = `
                         class="arco-table-th-item"
                       >
                         <label
+                          aria-disabled="false"
                           class="arco-checkbox"
                         >
                           <input
@@ -14734,8 +14970,10 @@ exports[`renders Table/demo/virtualized.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"
@@ -14838,8 +15076,10 @@ exports[`renders Table/demo/virtualized.md correctly 1`] = `
                               class="arco-checkbox-mask"
                             >
                               <svg
+                                aria-hidden="true"
                                 class="arco-checkbox-mask-icon"
                                 fill="currentColor"
+                                focusable="false"
                                 height="200"
                                 viewBox="0 0 1024 1024"
                                 width="200"

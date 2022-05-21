@@ -24,6 +24,7 @@ const InputComponent = React.forwardRef<RefInputType, InputComponentProps>(
       value,
       autoFitWidth,
       onClear,
+      readOnly,
       onValueChange,
       maxLength: propMaxLength,
       ...rest
@@ -139,7 +140,9 @@ const InputComponent = React.forwardRef<RefInputType, InputComponentProps>(
     };
 
     const inputProps = {
+      'aria-invalid': error,
       ...otherProps,
+      readOnly,
       maxLength: mergedMaxLength,
       value: compositionValue || value || '',
       disabled,
@@ -159,7 +162,7 @@ const InputComponent = React.forwardRef<RefInputType, InputComponentProps>(
         {allowClear ? (
           <>
             <input ref={refInput} {...inputProps} />
-            {!disabled && allowClear && value ? (
+            {!readOnly && !disabled && allowClear && value ? (
               <IconHover
                 className={`${prefixCls}-clear-icon`}
                 onClick={(e) => {

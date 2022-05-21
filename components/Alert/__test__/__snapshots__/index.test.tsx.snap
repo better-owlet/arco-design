@@ -3,18 +3,19 @@
 exports[`ConfigProvider componentConfig.Alert default 1`] = `
 <div
   class="arco-alert arco-alert-info"
+  role="alert"
 >
   <div
     class="arco-alert-icon-wrapper"
   >
     <svg
+      aria-hidden="true"
       class="arco-icon arco-icon-info-circle-fill"
       fill="none"
-      height="1em"
+      focusable="false"
       stroke="currentColor"
       stroke-width="4"
       viewBox="0 0 48 48"
-      width="1em"
     >
       <path
         clip-rule="evenodd"
@@ -34,18 +35,19 @@ exports[`ConfigProvider componentConfig.Alert default 1`] = `
 exports[`ConfigProvider componentConfig.Alert set className globally 1`] = `
 <div
   class="arco-alert arco-alert-info global-default-class"
+  role="alert"
 >
   <div
     class="arco-alert-icon-wrapper"
   >
     <svg
+      aria-hidden="true"
       class="arco-icon arco-icon-info-circle-fill"
       fill="none"
-      height="1em"
+      focusable="false"
       stroke="currentColor"
       stroke-width="4"
       viewBox="0 0 48 48"
-      width="1em"
     >
       <path
         clip-rule="evenodd"
@@ -65,18 +67,19 @@ exports[`ConfigProvider componentConfig.Alert set className globally 1`] = `
 exports[`ConfigProvider componentConfig.Alert set className globally and component set className itself. 1`] = `
 <div
   class="arco-alert arco-alert-info component-class"
+  role="alert"
 >
   <div
     class="arco-alert-icon-wrapper"
   >
     <svg
+      aria-hidden="true"
       class="arco-icon arco-icon-info-circle-fill"
       fill="none"
-      height="1em"
+      focusable="false"
       stroke="currentColor"
       stroke-width="4"
       viewBox="0 0 48 48"
-      width="1em"
     >
       <path
         clip-rule="evenodd"

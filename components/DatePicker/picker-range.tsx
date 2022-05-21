@@ -106,6 +106,7 @@ const Picker = (baseProps: RangePickerProps) => {
     onPickerValueChange,
     triggerElement,
     clearRangeOnReselect,
+    separator,
     utcOffset,
     timezone,
   } = props;
@@ -172,7 +173,7 @@ const Picker = (baseProps: RangePickerProps) => {
   const firstRange = useRef<boolean>(true);
 
   const now = getNow();
-  const zoneNow = toTimezone(now);
+  const zoneNow = toTimezone(now, utcOffset, timezone);
 
   function getTimeValues(): Dayjs[] {
     const timeValues: Dayjs[] = [];
@@ -549,21 +550,18 @@ const Picker = (baseProps: RangePickerProps) => {
       } else if (!showTime) {
         onConfirmValue(newValueShow);
       }
+    } else if (newSelectedLength <= 1) {
+      switchFocusedInput(true);
+    } else if (selectedLength === 2 && firstRange.current && !isHalfAvailable) {
+      firstRange.current = false;
+      switchFocusedInput(true);
+      if (!showTime && !isOutOfRange) {
+        onConfirmValue(newValueShow, true);
+      }
     } else {
-      setFixedPageShowDates(sortedValueShow);
-      if (newSelectedLength <= 1) {
-        switchFocusedInput(true);
-      } else if (selectedLength === 2 && firstRange.current && !isHalfAvailable) {
-        firstRange.current = false;
-        switchFocusedInput(true);
-        if (!showTime && !isOutOfRange) {
-          onConfirmValue(newValueShow, true);
-        }
-      } else {
-        firstRange.current = false;
-        if (!showTime && !isOutOfRange) {
-          onConfirmValue(newValueShow);
-        }
+      firstRange.current = false;
+      if (!showTime && !isOutOfRange) {
+        onConfirmValue(newValueShow);
       }
     }
   }
@@ -571,7 +569,7 @@ const Picker = (baseProps: RangePickerProps) => {
   // Callback when click TimePicker
   function onTimePickerSelect(index: number, _: string, time: Dayjs) {
     const newValueShow = isArray(panelValue) ? [...panelValue] : [];
-    const newTimeValue = getValueWithTime(newValueShow[index], time);
+    const newTimeValue = getValueWithTime(newValueShow[index] || getNow(utcOffset, timezone), time);
     newValueShow[index] = newTimeValue;
     onSelectValueShow(newValueShow);
   }
@@ -851,6 +849,7 @@ const Picker = (baseProps: RangePickerProps) => {
             changeFocusedInputIndex={changeFocusedInputIndex}
             focusedInputIndex={focusedInputIndex}
             isPlaceholder={!!hoverPlaceholderValue}
+            separator={separator}
           />
         )}
       </Trigger>

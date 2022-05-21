@@ -12,7 +12,12 @@ exports[`renders Trigger/demo/alignPoint.md correctly 1`] = `
       Trigger
     </span>
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-0"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:300px;margin-left:20px"
       tabindex="0"
     >
@@ -39,16 +44,18 @@ exports[`renders Trigger/demo/alignPoint.md correctly 1`] = `
                   click
                 </span>
                 <span
+                  aria-label="Close"
                   class="arco-icon-hover arco-tag-icon-hover arco-tag-close-btn"
+                  role="button"
                 >
                   <svg
+                    aria-hidden="true"
                     class="arco-icon arco-icon-close"
                     fill="none"
-                    height="1em"
+                    focusable="false"
                     stroke="currentColor"
                     stroke-width="4"
                     viewBox="0 0 48 48"
-                    width="1em"
                   >
                     <path
                       d="M9.857 9.858 24 24m0 0 14.142 14.142M24 24 38.142 9.858M24 24 9.857 38.142"
@@ -69,20 +76,21 @@ exports[`renders Trigger/demo/alignPoint.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
             class="arco-select-expand-icon"
           >
             <svg
+              aria-hidden="true"
               class="arco-icon arco-icon-expand"
               fill="none"
-              height="1em"
+              focusable="false"
               stroke="currentColor"
               stroke-width="4"
               style="transform:rotate(-45deg)"
               viewBox="0 0 48 48"
-              width="1em"
             >
               <path
                 d="M7 26v14c0 .552.444 1 .996 1H22m19-19V8c0-.552-.444-1-.996-1H26"
@@ -319,5 +327,25 @@ exports[`renders Trigger/demo/triggers.md correctly 1`] = `
     tabindex="0"
     value=""
   />
+</div>
+`;
+
+exports[`renders Trigger/demo/updateAtScroll.md correctly 1`] = `
+<div
+  style="background:var(--color-fill-2);padding:40px;height:100px;overflow:auto"
+>
+  <div
+    style="height:200px"
+  >
+    <button
+      class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square"
+      style="margin-top:80px"
+      type="button"
+    >
+      <span>
+        Button
+      </span>
+    </button>
+  </div>
 </div>
 `;

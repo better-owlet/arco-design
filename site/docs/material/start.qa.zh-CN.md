@@ -97,6 +97,91 @@ plugins: [
 ]
 ```
 
+## 如何关联主题？
+
+首先需要明确的是：**主题包应由业务项目本身而非物料引入**。物料平台所提供的主题关联，仅用于物料搭配某主题使用时的效果展示。
+
+### 通过团队配置（推荐）
+
+![](https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/screenshot-20220408-145533.png~tplv-uwbnlip3yd-webp.webp)
+
+在团队页面点击「⚙」按钮进行团队信息配置（仅团队管理员可配），搜索所需关联的主题并提交。完成配置后，平台将在物料预览时优先加载所关联主题包而非 Arco 默认的样式。
+
+如你未使用「团队站点」功能，可略过下边的内容。
+
+---
+
+此配置项对「物料列表」和「团队站点」的物料预览均可生效。需要额外注意的是，由于「团队站点」的本地预览和 Dev 模式未与具体的团队相关联，需配置本地站点项目的 `.config/main.js` 中的字段使其与具体团队关联。
+
+**注意：需要 `arco-material-doc-site >= 1.10.0` 且本地需安装主题对应的 NPM 包，否则 Dev 模式下会因模块缺失而报错。**
+
+```js
+// .config/main.js
+/**
+ * @type {import('arco-material-doc-site').MainConfig}
+ */
+module.exports = {
+  // ... Other settings...
+  // 通过 group 字段配置本地预览或者 Dev 时所需关联的团队配置
+  group: {
+    id: 1,
+    // 是否为内网团队
+    private: false,
+  },
+};
+```
+
+完成以上配置后，「团队站点」本地 Dev 时将尝试使用对应团队的主题配置信息：
+
+![](https://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/screenshot-20220408-153706.png~tplv-uwbnlip3yd-webp.webp)
+
+### 仅配置团队站点
+
+如果仅需要在「团队站点」使用主题，也可以直接配置本地站点项目的 `.config/main.js` 中的字段。此字段的优先级高于上一部分的团队级配置。
+
+**注意：本地需安装主题对应的 NPM 包，否则 Dev 模式下会因模块缺失而报错。**
+
+```js
+// .config/main.js
+/**
+ * @type {import('arco-material-doc-site').MainConfig}
+ */
+module.exports = {
+  // ... Other settings...
+  site: {
+    // ... Other settings...
+    // 主题对应的 NPM 包名
+    arcoDesignLabTheme: '@arco-design/theme-volcengine-ui'
+  },
+};
+```
+
+## 团队级物料关键词配置
+
+在 `arco init` 创建物料项目时，我们提供了一系列的物料关键词可供选择，这些关键词方便用户对物料进行快速筛选。团队管理者可以通过配置来自定义备选关键词列表：
+
+![](http://p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/screenshot-20220420-150133.png~tplv-uwbnlip3yd-webp.webp)
+
+完成配置后，团队物料列表将使用所配置的关键词列表进行筛选。 Arco CLI 也可通过 `arco group --link` 来关联指定团队：
+
+**版本要求：arco-cli >= 1.27.0**
+
+```bash
+# 从已加入的团队中选择一个进行关联
+arco group --link
+
+# 关联指定团队，参数为你的团队 ID
+arco group --link 1
+
+# 取消关联团队
+arco group --link 0
+```
+
+关联团队后将有以下变化：
+
+* `arco init` 创建项目时，将使用团队配置的关键词列表作为备选项；
+* `arco sync` 发布物料时，将优先将物料发布至已关联的团队。
+
 ## 物料单元测试报错
 
 物料项目的单元测试采用 [Jest](https://jestjs.io/)，其默认不支持 ES Module 的语法 (import / export)。参考 [此文档](https://jestjs.io/docs/ecmascript-modules)

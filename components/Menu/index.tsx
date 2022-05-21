@@ -17,6 +17,9 @@ import MenuContext from './context';
 import { useHotkeyListener } from './hotkey';
 import useMergeProps from '../_util/hooks/useMergeProps';
 
+// Generate DOM id for instance
+let globalMenuIndex = 0;
+
 const DEFAULT_THEME: MenuProps['theme'] = 'light';
 
 const defaultProps: MenuProps = {
@@ -77,13 +80,24 @@ function Menu(baseProps: MenuProps, ref) {
   const mergedCollapse = siderCollapsed || collapse || inDropdown || mode === 'popButton';
   const theme = propTheme || menuContext.theme || DEFAULT_THEME;
 
-  const refInlineMenuKeys = useRef<string[]>([]);
+  const refSubMenuKeys = useRef<string[]>([]);
   const refPrevSubMenuKeys = useRef<string[]>([]);
   const forceUpdate = useForceUpdate();
 
   const menuInfoMap = useMemo(() => {
     return generateInfoMap(children);
   }, [children]);
+
+  // Unique ID of this select instance
+  const instanceId = useMemo<string>(() => {
+    if (rest.id) {
+      return rest.id;
+    }
+
+    const id = `${prefixCls}-${globalMenuIndex}`;
+    globalMenuIndex++;
+    return id;
+  }, [rest.id]);
 
   const {
     hotkeyInfo,
@@ -99,21 +113,22 @@ function Menu(baseProps: MenuProps, ref) {
   // autoOpen 时，初次渲染展开所有的子菜单
   useEffect(() => {
     // 从 openKeys 中过滤已经不存在的 subMenuKey
-    let validOpenKeys = openKeys.filter((key) => refInlineMenuKeys.current.indexOf(key) !== -1);
+    let validOpenKeys = openKeys.filter((key) => refSubMenuKeys.current.indexOf(key) !== -1);
     if (autoOpen) {
-      const keysAdded = refInlineMenuKeys.current.filter(
+      const keysAdded = refSubMenuKeys.current.filter(
         (key) => refPrevSubMenuKeys.current.indexOf(key) === -1
       );
       validOpenKeys = openKeys.concat(keysAdded);
     }
     setOpenKeys(accordion ? validOpenKeys.slice(0, 1) : validOpenKeys);
-    refPrevSubMenuKeys.current = refInlineMenuKeys.current.slice();
-  }, [refInlineMenuKeys.current.toString()]);
+    refPrevSubMenuKeys.current = refSubMenuKeys.current.slice();
+  }, [refSubMenuKeys.current.toString()]);
+
+  const mergedHasCollapseButton =
+    mode !== 'horizontal' && mode !== 'popButton' && !inDropdown && hasCollapseButton;
 
   const renderChildren = () => {
     const childrenList = processChildren(children, { level: 1 });
-    const mergedHasCollapseButton =
-      mode !== 'horizontal' && mode !== 'popButton' && !inDropdown && hasCollapseButton;
     const collapseIcon = collapse
       ? (icons && icons.collapseActive) || <IconMenuUnfold />
       : (icons && icons.collapseDefault) || <IconMenuFold />;
@@ -130,6 +145,10 @@ function Menu(baseProps: MenuProps, ref) {
 
         {mergedHasCollapseButton && (
           <div
+            tabIndex={0}
+            role="button"
+            aria-controls={instanceId}
+            aria-expanded={!collapse}
             className={`${prefixCls}-collapse-button`}
             onClick={() => {
               const newCollapse = !collapse;
@@ -151,6 +170,8 @@ function Menu(baseProps: MenuProps, ref) {
 
   return (
     <div
+      id={mergedHasCollapseButton ? instanceId : undefined}
+      role="menu"
       tabIndex={1}
       {...omit(rest, ['isMenu'])}
       ref={ref}
@@ -184,14 +205,15 @@ function Menu(baseProps: MenuProps, ref) {
           autoScrollIntoView,
           scrollConfig,
           // pass props directly
+          id: instanceId,
           prefixCls,
           hotkeyInfo: 'hotkeyInfo' in menuContext ? menuContext.hotkeyInfo : hotkeyInfo,
           clearHotkeyInfo,
           collectInlineMenuKeys: (key, unmount) => {
             if (unmount) {
-              refInlineMenuKeys.current = refInlineMenuKeys.current.filter((x) => x !== key);
+              refSubMenuKeys.current = refSubMenuKeys.current.filter((x) => x !== key);
             } else {
-              refInlineMenuKeys.current.push(key);
+              refSubMenuKeys.current.push(key);
             }
             forceUpdate();
           },

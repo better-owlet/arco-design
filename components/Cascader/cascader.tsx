@@ -7,6 +7,7 @@ import React, {
   useRef,
   useContext,
   useCallback,
+  useMemo,
 } from 'react';
 import { isArray, isFunction, isObject, isString } from '../_util/is';
 import Trigger from '../Trigger';
@@ -30,8 +31,12 @@ import {
   getStore,
   formatValue,
   removeValueFromSet,
+  SHOW_CHILD,
 } from './util';
 import useForceUpdate from '../_util/hooks/useForceUpdate';
+
+// Generate DOM id for instance
+let globalCascaderIndex = 0;
 
 export const DefaultFieldNames = {
   label: 'label',
@@ -47,6 +52,7 @@ const defaultProps: CascaderProps = {
   fieldNames: DefaultFieldNames,
   trigger: 'click',
   expandTrigger: 'click',
+  checkedStrategy: SHOW_CHILD,
 };
 
 function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
@@ -61,31 +67,39 @@ function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
   const forceUpdate = useForceUpdate();
 
   const [inputValue, setInputValue] = useState('');
-  // 暂存被选中的值对应的节点。仅在onSearch的时候用到
-  // 避免出现下拉列表改变，之前选中的option找不到对应的节点，展示上会出问题。
-  const stashNodes = useRef<Store<T>['nodes']>([]);
-  // const [mergeValue, setValue] = useMergeValue([], {
-  //   value: 'value' in props ? formatValue(props.value, isMultiple) : undefined,
-  //   defaultValue: 'defaultValue' in props ? formatValue(props.defaultValue, isMultiple) : undefined,
-  // });
+
+  const store = useCurrentRef<Store<T>>(() => {
+    return getStore(
+      props,
+      formatValue('value' in props ? props.value : props.defaultValue, isMultiple)
+    );
+  }, [JSON.stringify(getConfig(props)), props.options]);
+
   const [stateValue, setValue] = useState(() => {
     return 'value' in props
-      ? formatValue(props.value, isMultiple)
+      ? formatValue(props.value, isMultiple, store)
       : 'defaultValue' in props
-      ? formatValue(props.defaultValue, isMultiple)
+      ? formatValue(props.defaultValue, isMultiple, store)
       : [];
   });
-  const mergeValue = 'value' in props ? formatValue(props.value, isMultiple) : stateValue;
+
+  const mergeValue = 'value' in props ? formatValue(props.value, isMultiple, store) : stateValue;
 
   const [popupVisible, setPopupVisible] = useMergeValue(false, {
     value: props.popupVisible,
     defaultValue: props.defaultPopupVisible,
   });
   const selectRef = useRef(null);
-  const store = useCurrentRef<Store<T>>(
-    () => getStore(props, mergeValue),
-    [JSON.stringify(getConfig(props)), props.options]
-  );
+  // 暂存被选中的值对应的节点。仅在onSearch的时候用到
+  // 避免出现下拉列表改变，之前选中的option找不到对应的节点，展示上会出问题。
+  const stashNodes = useRef<Store<T>['nodes']>(store?.getCheckedNodes() || []);
+
+  // Unique ID of this select instance
+  const instancePopupID = useMemo<string>(() => {
+    const id = `${prefixCls}-popup-${globalCascaderIndex}`;
+    globalCascaderIndex++;
+    return id;
+  }, []);
 
   useEffect(() => {
     const clearTimer = () => {
@@ -108,7 +122,7 @@ function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
 
   useUpdate(() => {
     if ('value' in props && props.value !== stateValue) {
-      const newValue = formatValue(props.value, isMultiple);
+      const newValue = formatValue(props.value, isMultiple, store);
       store.setNodeCheckedByValue(newValue);
       setValue(newValue);
     }
@@ -237,6 +251,7 @@ function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
     }
 
     const newValue = mergeValue.filter((_, i) => i !== index);
+    store.setNodeCheckedByValue(newValue);
     handleChange(newValue);
   };
 
@@ -256,6 +271,7 @@ function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
 
     return (
       <div
+        id={instancePopupID}
         className={cs(`${prefixCls}-popup`, {
           [`${prefixCls}-popup-trigger-hover`]: props.expandTrigger === 'hover',
         })}
@@ -327,6 +343,7 @@ function Cascader<T extends OptionProps>(baseProps: CascaderProps<T>, ref) {
         <SelectView
           {...props}
           ref={selectRef}
+          ariaControls={instancePopupID}
           popupVisible={popupVisible}
           value={isMultiple ? mergeValue : mergeValue && mergeValue[0]}
           inputValue={inputValue}

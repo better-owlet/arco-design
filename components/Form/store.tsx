@@ -1,3 +1,4 @@
+import React from 'react';
 import get from 'lodash/get';
 import setWith from 'lodash/setWith';
 import has from 'lodash/has';
@@ -8,23 +9,11 @@ import Control from './control';
 import { FieldError, FormProps, ValidateFieldsErrors, KeyType, FormValidateFn } from './interface';
 import promisify from './promisify';
 
-type DeepPartial<T> = T extends
-  | string
-  | number
-  | bigint
-  | boolean
-  | null
-  | undefined
-  | symbol
-  | Date
-  ? T | undefined
-  : T extends Array<infer U>
-  ? Array<DeepPartial<U>>
-  : T extends ReadonlyArray<infer U>
-  ? ReadonlyArray<DeepPartial<U>>
-  : {
-      [K in keyof T]?: DeepPartial<T[K]>;
-    };
+export type DeepPartial<T> = T extends object
+  ? {
+      [P in keyof T]?: DeepPartial<T[P]>;
+    }
+  : T;
 
 /**
  * setFieldValue: setFieldsValue, setFieldValue, setFields
@@ -57,6 +46,8 @@ class Store<
 > {
   private registerFields: Control<FormData, FieldValue, FieldKey>[] = [];
 
+  private registerWatchers: (() => void)[] = [];
+
   // 和formControl 的 touched属性不一样。 只要被改过的字段，这里就会存储。并且不会跟随formControl被卸载而清除。
   // reset 的时候清除
   private touchedFields: { [key: string]: unknown } = {};
@@ -74,6 +65,10 @@ class Store<
       const { onValuesChange } = this.callbacks;
       onValuesChange && onValuesChange(value, this.getFields());
     }
+
+    this.registerWatchers.forEach((item) => {
+      item();
+    });
   }
 
   private triggerTouchChange(value: Partial<FormData>) {
@@ -89,6 +84,14 @@ class Store<
     }
   ) => {
     this.callbacks = values;
+  };
+
+  public registerWatcher = (item) => {
+    this.registerWatchers.push(item);
+
+    return () => {
+      this.registerWatchers = this.registerWatchers.filter((x) => x !== item);
+    };
   };
 
   // 收集所有control字段，并在组件卸载时移除
@@ -110,15 +113,15 @@ class Store<
     return this.registerFields;
   };
 
-  // 获取props.field === field 的contorl组件。
+  // 获取props.field === field 的control组件。
   public getRegisteredField = (field?: FieldKey) => {
     return this.registerFields.filter((x) => x.props.field === field)[0];
   };
 
-  // 通知所有的formitem进行更新。
-  // setfielValue: 外部调用setFieldsValue (setFieldValue等)方法触发更新
+  // 通知所有的FormItem进行更新。
+  // setFieldValue: 外部调用setFieldsValue (setFieldValue等)方法触发更新
   // innerSetValue: 控件例如Input，通过onChange事件触发的更新
-  // reset： 重置
+  // reset：重置
   private notify = (type: NotifyType, info: StoreChangeInfo<FieldKey>) => {
     if (type === 'setFieldValue' || (type === 'innerSetValue' && !info.ignore)) {
       // type = reset时，在reset函数里处理
@@ -293,7 +296,7 @@ class Store<
   };
 
   public getFieldValue = (field: FieldKey): FieldValue => {
-    return get(this.store, field);
+    return cloneDeep(get(this.store, field));
   };
 
   // 获取单个字段的错误信息。
@@ -323,9 +326,7 @@ class Store<
   };
 
   public getFields = (): Partial<FormData> => {
-    const values = cloneDeep(this.store);
-
-    return values;
+    return cloneDeep(this.store);
   };
 
   public getFieldsValue = (fields?: FieldKey[]): Partial<FormData> => {

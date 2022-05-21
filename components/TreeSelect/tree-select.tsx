@@ -36,6 +36,9 @@ function isEmptyValue(value) {
   );
 }
 
+// Generate DOM id for instance
+let globalTreeSelectIndex = 0;
+
 const defaultProps: TreeSelectProps = {
   bordered: true,
   treeCheckedStrategy: Tree.SHOW_CHILD,
@@ -71,6 +74,13 @@ const TreeSelect: ForwardRefRenderFunction<
 
   const prefixCls = getPrefixCls('tree-select');
   const isFilterNode = inputValue && !isFunction(props.onSearch);
+
+  // Unique ID of this select instance
+  const instancePopupID = useMemo<string>(() => {
+    const id = `${prefixCls}-popup-${globalTreeSelectIndex}`;
+    globalTreeSelectIndex++;
+    return id;
+  }, []);
 
   const handleSearch = useCallback(
     (inputText) => {
@@ -247,6 +257,7 @@ const TreeSelect: ForwardRefRenderFunction<
 
         return (
           <div
+            id={instancePopupID}
             className={`${prefixCls}-popup`}
             style={{
               maxHeight:
@@ -265,35 +276,48 @@ const TreeSelect: ForwardRefRenderFunction<
       }}
       popupVisible={popupVisible}
     >
-      {props.triggerElement || (
-        <SelectView
-          ref={refSelectView}
-          {...props}
-          popupVisible={popupVisible}
-          value={!multiple && isArray(value) ? value[0] : value}
-          inputValue={inputValue}
-          // other
-          isEmptyValue={isEmptyValue(value)}
-          prefixCls={prefixCls}
-          isMultiple={multiple}
-          renderText={renderText}
-          onRemoveCheckedItem={handleRemoveCheckedItem}
-          onClear={(e) => {
-            e.stopPropagation();
-            triggerChange([], {});
-            props.onClear && props.onClear(!!popupVisible);
-          }}
-          onKeyDown={(e) => {
-            e.stopPropagation();
-          }}
-          onFocus={(e) => {
-            e && e.stopPropagation();
-          }}
-          onChangeInputValue={(input) => {
-            setInputValue(input);
-          }}
-        />
-      )}
+      {typeof props.triggerElement === 'function'
+        ? (() => {
+            let valueForCallback;
+            if (multiple) {
+              valueForCallback = value.map((x) =>
+                props.labelInValue ? { label: x.label, value: x.value } : x.value
+              );
+            } else {
+              valueForCallback = props.labelInValue ? value[0] : value[0]?.value;
+            }
+            return props.triggerElement({ value: valueForCallback });
+          })()
+        : props.triggerElement || (
+            <SelectView
+              ref={refSelectView}
+              ariaControls={instancePopupID}
+              {...props}
+              popupVisible={popupVisible}
+              value={!multiple && isArray(value) ? value[0] : value}
+              inputValue={inputValue}
+              // other
+              isEmptyValue={isEmptyValue(value)}
+              prefixCls={prefixCls}
+              isMultiple={multiple}
+              renderText={renderText}
+              onRemoveCheckedItem={handleRemoveCheckedItem}
+              onClear={(e) => {
+                e.stopPropagation();
+                triggerChange([], {});
+                props.onClear && props.onClear(!!popupVisible);
+              }}
+              onKeyDown={(e) => {
+                e.stopPropagation();
+              }}
+              onFocus={(e) => {
+                e && e.stopPropagation();
+              }}
+              onChangeInputValue={(input) => {
+                setInputValue(input);
+              }}
+            />
+          )}
     </Trigger>
   );
 };

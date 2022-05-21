@@ -1,3 +1,52 @@
+## 2.32.2
+
+2022-04-29
+
+### 🐛 BugFix
+
+- Fixed a bug where the `DatePicker` component passed a `showTime` object that did not contain a `defaultValue`, causing the time panel to report an error.([#811](https://github.com/arco-design/arco-design/pull/811))
+
+## 2.32.0
+
+2022-04-15
+
+### 🐛 BugFix
+
+- Fixed the bug where `utcOffset` and `timezone` of `DatePicker.RangePicker` component did not work.([#765](https://github.com/arco-design/arco-design/pull/765))
+
+## 2.31.3
+
+2022-04-11
+
+### 🐛 BugFix
+
+- Fixed ts type of `disabledDate` for `DatePicker` component.([#750](https://github.com/arco-design/arco-design/pull/750))
+- Fixed the bug that the `DatePicker.RangePicker` component would report an error when selecting the time directly.([#749](https://github.com/arco-design/arco-design/pull/749))
+
+## 2.31.0
+
+2022-03-25
+
+### 🐛 BugFix
+
+- Fixed the `disabledDate` of the `DatePicker` component being incorrect at the border of the quick selection panel.([#687](https://github.com/arco-design/arco-design/pull/687))
+
+## 2.30.2
+
+2022-03-18
+
+### 🐛 BugFix
+
+- Fixed the issue that the `separator` parameter of the `DatePicker` component did not take effect.([#647](https://github.com/arco-design/arco-design/pull/647))
+
+## 2.30.1
+
+2022-03-11
+
+### 💎 Performance
+
+- The `DatePicker` component no longer jumps the panel when picking a date.([#627](https://github.com/arco-design/arco-design/pull/627))
+
 ## 2.30.0
 
 2022-03-04
